@@ -29,6 +29,5 @@ final class Graph {
         }
 
         sourceNode.neighbors.append(destinationNode)
-        destinationNode.neighbors.append(sourceNode)
     }
 }

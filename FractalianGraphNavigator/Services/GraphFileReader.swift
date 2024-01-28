@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SWXMLHash
 
 private enum GraphMLKeys {
     static let id = "id"
