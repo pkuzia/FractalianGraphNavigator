@@ -20,6 +20,16 @@
 		066D07732B667C8A009E60C5 /* GraphWithoutCycles.xml in Resources */ = {isa = PBXBuildFile; fileRef = 066D07722B667C8A009E60C5 /* GraphWithoutCycles.xml */; };
 		066D07762B667D6E009E60C5 /* GraphCorruptedXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = 066D07742B667D6E009E60C5 /* GraphCorruptedXML.xml */; };
 		066D07772B667D6E009E60C5 /* GraphCorruptedStructure.xml in Resources */ = {isa = PBXBuildFile; fileRef = 066D07752B667D6E009E60C5 /* GraphCorruptedStructure.xml */; };
+		066D07792B66808A009E60C5 /* RandomGraphGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D07782B66808A009E60C5 /* RandomGraphGenerator.swift */; };
+		066D077B2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D077A2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift */; };
+		066D077E2B668CAB009E60C5 /* GraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D077D2B668CAB009E60C5 /* GraphTests.swift */; };
+		066D078A2B69460C009E60C5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D07882B69460C009E60C5 /* String+Extension.swift */; };
+		066D078F2B694693009E60C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D078C2B694693009E60C5 /* Constants.swift */; };
+		066D07902B694693009E60C5 /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D078D2B694693009E60C5 /* Assets+Generated.swift */; };
+		066D07932B6946F7009E60C5 /* String+LocalizedResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D07922B6946F7009E60C5 /* String+LocalizedResources.swift */; };
+		066D07A42B694F3F009E60C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 066D07A32B694F3F009E60C5 /* Localizable.strings */; };
+		3AB5855AF65FF5DD0E58B9D3 /* Pods_FractalianGraphNavigator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7F3DF1BB2EE6704B8FB0D4 /* Pods_FractalianGraphNavigator.framework */; };
+		97E57CCC0F569AB27F13DC1C /* Pods_FractalianGraphNavigatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56E794A60DB6C6F9E5C76F1 /* Pods_FractalianGraphNavigatorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,20 @@
 		066D07722B667C8A009E60C5 /* GraphWithoutCycles.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GraphWithoutCycles.xml; sourceTree = "<group>"; };
 		066D07742B667D6E009E60C5 /* GraphCorruptedXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GraphCorruptedXML.xml; sourceTree = "<group>"; };
 		066D07752B667D6E009E60C5 /* GraphCorruptedStructure.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GraphCorruptedStructure.xml; sourceTree = "<group>"; };
+		066D07782B66808A009E60C5 /* RandomGraphGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGraphGenerator.swift; sourceTree = "<group>"; };
+		066D077A2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGraphGeneratorTests.swift; sourceTree = "<group>"; };
+		066D077D2B668CAB009E60C5 /* GraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTests.swift; sourceTree = "<group>"; };
+		066D07882B69460C009E60C5 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		066D078C2B694693009E60C5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		066D078D2B694693009E60C5 /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
+		066D07922B6946F7009E60C5 /* String+LocalizedResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+LocalizedResources.swift"; sourceTree = "<group>"; };
+		066D07A32B694F3F009E60C5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		135AF333E2E61D5D82447E8C /* Pods-FractalianGraphNavigatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FractalianGraphNavigatorTests.debug.xcconfig"; path = "Target Support Files/Pods-FractalianGraphNavigatorTests/Pods-FractalianGraphNavigatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D3496C7DE39CABD82BBCCD6 /* Pods-FractalianGraphNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FractalianGraphNavigator.debug.xcconfig"; path = "Target Support Files/Pods-FractalianGraphNavigator/Pods-FractalianGraphNavigator.debug.xcconfig"; sourceTree = "<group>"; };
+		61D44552C6CCFDEB13EAF64D /* Pods-FractalianGraphNavigatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FractalianGraphNavigatorTests.release.xcconfig"; path = "Target Support Files/Pods-FractalianGraphNavigatorTests/Pods-FractalianGraphNavigatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A7F3DF1BB2EE6704B8FB0D4 /* Pods_FractalianGraphNavigator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FractalianGraphNavigator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56E794A60DB6C6F9E5C76F1 /* Pods_FractalianGraphNavigatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FractalianGraphNavigatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC31E66A40CD037740F8BB1B /* Pods-FractalianGraphNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FractalianGraphNavigator.release.xcconfig"; path = "Target Support Files/Pods-FractalianGraphNavigator/Pods-FractalianGraphNavigator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB5855AF65FF5DD0E58B9D3 /* Pods_FractalianGraphNavigator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E57CCC0F569AB27F13DC1C /* Pods_FractalianGraphNavigatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +100,8 @@
 				0632A53F2B65975B0002EA17 /* FractalianGraphNavigator */,
 				0632A5502B65975C0002EA17 /* FractalianGraphNavigatorTests */,
 				0632A53E2B65975B0002EA17 /* Products */,
+				0E9BE76F742496328160F397 /* Pods */,
+				96EF217BF56263BB2BC5DA12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,27 +118,21 @@
 			isa = PBXGroup;
 			children = (
 				0632A5732B659D180002EA17 /* App */,
-				0632A56D2B6597CE0002EA17 /* Helpers */,
+				0632A56D2B6597CE0002EA17 /* Extensions */,
 				0632A56A2B6597B60002EA17 /* Services */,
 				0632A56C2B6597C70002EA17 /* Model */,
 				0632A56B2B6597BC0002EA17 /* Features */,
+				066D077F2B694220009E60C5 /* Components */,
 				0632A5722B659CDC0002EA17 /* Resources */,
 				0632A5422B65975B0002EA17 /* ContentView.swift */,
 			);
 			path = FractalianGraphNavigator;
 			sourceTree = "<group>";
 		};
-		0632A5462B65975C0002EA17 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				0632A5472B65975C0002EA17 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		0632A5502B65975C0002EA17 /* FractalianGraphNavigatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				066D077C2B668CA0009E60C5 /* Model */,
 				0632A6E42B6673C60002EA17 /* Resources */,
 				0632A5792B6672620002EA17 /* Services */,
 				0632A5512B65975C0002EA17 /* FractalianGraphNavigatorTests.swift */,
@@ -122,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				0632A5742B659DDE0002EA17 /* GraphFileReader.swift */,
+				066D07782B66808A009E60C5 /* RandomGraphGenerator.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -142,18 +165,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0632A56D2B6597CE0002EA17 /* Helpers */ = {
+		0632A56D2B6597CE0002EA17 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				066D07922B6946F7009E60C5 /* String+LocalizedResources.swift */,
+				066D07882B69460C009E60C5 /* String+Extension.swift */,
 			);
-			path = Helpers;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0632A5722B659CDC0002EA17 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0632A5462B65975C0002EA17 /* Preview Content */,
+				0632A5472B65975C0002EA17 /* Preview Assets.xcassets */,
 				0632A5442B65975C0002EA17 /* Assets.xcassets */,
+				066D07A32B694F3F009E60C5 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -170,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				0632A57A2B6672FE0002EA17 /* GraphFileReaderTests.swift */,
+				066D077A2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -185,6 +212,51 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		066D077C2B668CA0009E60C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				066D077D2B668CAB009E60C5 /* GraphTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		066D077F2B694220009E60C5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				066D07802B69422B009E60C5 /* Styles */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		066D07802B69422B009E60C5 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				066D078C2B694693009E60C5 /* Constants.swift */,
+				066D078D2B694693009E60C5 /* Assets+Generated.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		0E9BE76F742496328160F397 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D3496C7DE39CABD82BBCCD6 /* Pods-FractalianGraphNavigator.debug.xcconfig */,
+				BC31E66A40CD037740F8BB1B /* Pods-FractalianGraphNavigator.release.xcconfig */,
+				135AF333E2E61D5D82447E8C /* Pods-FractalianGraphNavigatorTests.debug.xcconfig */,
+				61D44552C6CCFDEB13EAF64D /* Pods-FractalianGraphNavigatorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		96EF217BF56263BB2BC5DA12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A7F3DF1BB2EE6704B8FB0D4 /* Pods_FractalianGraphNavigator.framework */,
+				A56E794A60DB6C6F9E5C76F1 /* Pods_FractalianGraphNavigatorTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,17 +264,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0632A5612B65975C0002EA17 /* Build configuration list for PBXNativeTarget "FractalianGraphNavigator" */;
 			buildPhases = (
+				14CF27E85FA6BA7ED18C4516 /* [CP] Check Pods Manifest.lock */,
+				066D07A52B695029009E60C5 /* ShellScript */,
 				0632A5392B65975B0002EA17 /* Sources */,
 				0632A53A2B65975B0002EA17 /* Frameworks */,
 				0632A53B2B65975B0002EA17 /* Resources */,
+				8984866376C85168EBAAA48A /* [CP] Embed Pods Frameworks */,
+				066D07A72B69503C009E60C5 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FractalianGraphNavigator;
-			packageProductDependencies = (
-			);
 			productName = FractalianGraphNavigator;
 			productReference = 0632A53D2B65975B0002EA17 /* FractalianGraphNavigator.app */;
 			productType = "com.apple.product-type.application";
@@ -211,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0632A5642B65975C0002EA17 /* Build configuration list for PBXNativeTarget "FractalianGraphNavigatorTests" */;
 			buildPhases = (
+				9B81EFCA95D5B6114D734244 /* [CP] Check Pods Manifest.lock */,
 				0632A5492B65975C0002EA17 /* Sources */,
 				0632A54A2B65975C0002EA17 /* Frameworks */,
 				0632A54B2B65975C0002EA17 /* Resources */,
+				DB0A01491481650E4E6F659B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,8 +329,6 @@
 				Base,
 			);
 			mainGroup = 0632A5342B65975B0002EA17;
-			packageReferences = (
-			);
 			productRefGroup = 0632A53E2B65975B0002EA17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066D07A42B694F3F009E60C5 /* Localizable.strings in Resources */,
 				0632A5482B65975C0002EA17 /* Preview Assets.xcassets in Resources */,
 				0632A5452B65975C0002EA17 /* Assets.xcassets in Resources */,
 			);
@@ -288,16 +363,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		066D07A52B695029009E60C5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
+		};
+		066D07A72B69503C009E60C5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		14CF27E85FA6BA7ED18C4516 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FractalianGraphNavigator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8984866376C85168EBAAA48A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FractalianGraphNavigator/Pods-FractalianGraphNavigator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FractalianGraphNavigator/Pods-FractalianGraphNavigator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FractalianGraphNavigator/Pods-FractalianGraphNavigator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B81EFCA95D5B6114D734244 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FractalianGraphNavigatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB0A01491481650E4E6F659B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FractalianGraphNavigatorTests/Pods-FractalianGraphNavigatorTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FractalianGraphNavigatorTests/Pods-FractalianGraphNavigatorTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FractalianGraphNavigatorTests/Pods-FractalianGraphNavigatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0632A5392B65975B0002EA17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0632A5752B659DDE0002EA17 /* GraphFileReader.swift in Sources */,
+				066D078A2B69460C009E60C5 /* String+Extension.swift in Sources */,
+				066D07792B66808A009E60C5 /* RandomGraphGenerator.swift in Sources */,
 				0632A56F2B6598950002EA17 /* Graph.swift in Sources */,
 				0632A5432B65975B0002EA17 /* ContentView.swift in Sources */,
 				0632A5712B6598B10002EA17 /* GraphNode.swift in Sources */,
+				066D07902B694693009E60C5 /* Assets+Generated.swift in Sources */,
+				066D07932B6946F7009E60C5 /* String+LocalizedResources.swift in Sources */,
 				0632A5412B65975B0002EA17 /* FractalianGraphNavigatorApp.swift in Sources */,
+				066D078F2B694693009E60C5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +500,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066D077E2B668CAB009E60C5 /* GraphTests.swift in Sources */,
 				0632A5522B65975C0002EA17 /* FractalianGraphNavigatorTests.swift in Sources */,
+				066D077B2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift in Sources */,
 				0632A57B2B6672FE0002EA17 /* GraphFileReaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,14 +639,17 @@
 		};
 		0632A5622B65975C0002EA17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D3496C7DE39CABD82BBCCD6 /* Pods-FractalianGraphNavigator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FractalianGraphNavigator/Resources/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FractalianGraphNavigator/Resources\"";
 				DEVELOPMENT_TEAM = ATFEU26LMZ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fractalian Graph Navigator";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -470,6 +670,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -477,14 +678,17 @@
 		};
 		0632A5632B65975C0002EA17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC31E66A40CD037740F8BB1B /* Pods-FractalianGraphNavigator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FractalianGraphNavigator/Resources/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FractalianGraphNavigator/Resources\"";
 				DEVELOPMENT_TEAM = ATFEU26LMZ;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fractalian Graph Navigator";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -505,6 +709,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -512,18 +717,20 @@
 		};
 		0632A5652B65975C0002EA17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 135AF333E2E61D5D82447E8C /* Pods-FractalianGraphNavigatorTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ATFEU26LMZ;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = przemyslaw.kuzia.FractalianGraphNavigatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FractalianGraphNavigator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FractalianGraphNavigator";
@@ -532,18 +739,20 @@
 		};
 		0632A5662B65975C0002EA17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61D44552C6CCFDEB13EAF64D /* Pods-FractalianGraphNavigatorTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ATFEU26LMZ;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = przemyslaw.kuzia.FractalianGraphNavigatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FractalianGraphNavigator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FractalianGraphNavigator";

@@ -12,22 +12,39 @@ struct ContentView: View {
     @State private var graphFileReader = GraphFileReader()
     @State private var isFilePickerPresented = false
 
+    @State private var text: String = ""
+    @State private var text1: String = ""
+
     var body: some View {
         VStack {
-            Button("Wybierz plik") {
-                isFilePickerPresented.toggle()
-            }
-            .fileImporter(
-                isPresented: $isFilePickerPresented,
-                allowedContentTypes: [UTType.xml],
-                onCompletion: handleFileSelection
-            )
-            .padding()
+            Text(text)
+            Text(text1)
+//                .foregroundc
+//            Button("Wybierz plik") {
+//                isFilePickerPresented.toggle()
+//            }
+//            .fileImporter(
+//                isPresented: $isFilePickerPresented,
+//                allowedContentTypes: [UTType.xml],
+//                onCompletion: handleFileSelection
+//            )
+//            .padding()
 
 //            if let loadedGraph = graphFileReader.graph {
 //                Text("Liczba węzłów w grafie: \(loadedGraph.nodes.count)")
 //            }
         }
+        .onAppear(perform: {
+//            let start = CFAbsoluteTimeGetCurrent()
+//            let acyclicGenerator = DirectedGraphGenerator()
+//            let graph = acyclicGenerator.generateDAG()
+//            let diff = CFAbsoluteTimeGetCurrent() - start
+//            text = "Took \(diff) seconds"
+//
+//            if let node = graph.nodes.randomElement()?.value {
+//                text1 = "Random element: \(node.value) \n Number of neibours: \(node.neighbors.count)"
+//            }
+        })
     }
 
 

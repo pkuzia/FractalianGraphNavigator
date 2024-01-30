@@ -1,0 +1,15 @@
+--- 
+strings: 
+  inputs: FractalianGraphNavigator/Resources/Localizable.strings
+  outputs: 
+    - 
+      output: FractalianGraphNavigator/Extensions/String+LocalizedResources.swift
+      templatePath: Templates/string-swift-extension.stencil
+xcassets: 
+  - 
+    inputs: FractalianGraphNavigator/Resources/Assets.xcassets
+    outputs: 
+      - 
+        output: FractalianGraphNavigator/Components/Styles/Assets+Generated.swift
+        templatePath: Templates/xcassets-swift5.stencil
+
