@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0632A53C2B65975B0002EA17"
-               BuildableName = "FractalianGraphNavigator.app"
+               BuildableName = "Fractalian Graph Navigator.app"
                BlueprintName = "FractalianGraphNavigator"
                ReferencedContainer = "container:FractalianGraphNavigator.xcodeproj">
             </BuildableReference>
@@ -68,7 +68,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0632A53C2B65975B0002EA17"
-            BuildableName = "FractalianGraphNavigator.app"
+            BuildableName = "Fractalian Graph Navigator.app"
             BlueprintName = "FractalianGraphNavigator"
             ReferencedContainer = "container:FractalianGraphNavigator.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0632A53C2B65975B0002EA17"
-            BuildableName = "FractalianGraphNavigator.app"
+            BuildableName = "Fractalian Graph Navigator.app"
             BlueprintName = "FractalianGraphNavigator"
             ReferencedContainer = "container:FractalianGraphNavigator.xcodeproj">
          </BuildableReference>

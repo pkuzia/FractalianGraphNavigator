@@ -12,15 +12,19 @@ enum GraphReaderError: Error {
     case structuralError
 }
 
+// DOKOŃCZYĆ TESTY
 final class Graph {
     var nodes: [String: GraphNode] = [:]
 
-    func addNode(id: String) throws {
+    func addNode(id: String) throws -> GraphNode {
         if nodes[id] != nil {
             throw GraphReaderError.structuralError
         }
 
-        nodes[id] = GraphNode(value: id)
+        let newNode = GraphNode(value: id)
+        nodes[id] = newNode
+
+        return newNode
     }
 
     func addEdge(fromId sourceId: String, toId destinationId: String) throws {
@@ -35,6 +39,18 @@ final class Graph {
         sourceNode.neighbors.append(destinationNode)
     }
 
+    // Create index as param?
+    @discardableResult
+    func fetchOrCreateNode<T>(id: T) -> GraphNode? {
+        let key = "n\(id)"
+
+        if let node = nodes[key] {
+            return node
+        } else {
+            return try? addNode(id: key)
+        }
+    }
+
     func hasPath(from sourceId: String, to targetId: String) -> Bool {
         guard let sourceNode = nodes[sourceId], let targetNode = nodes[targetId] else {
             return false
@@ -44,29 +60,6 @@ final class Graph {
         return dfs(sourceNode: sourceNode, targetNode: targetNode, visitedNodes: &visitedNodes)
     }
 
-    func topologicalSort() -> [String] {
-        var result: [String] = []
-        var visited: Set<String> = []
-
-        func visit(_ node: GraphNode) {
-            visited.insert(node.value)
-            for neighbor in node.neighbors {
-                if !visited.contains(neighbor.value) {
-                    visit(neighbor)
-                }
-            }
-            result.append(node.value)
-        }
-
-        for node in nodes.values {
-            if !visited.contains(node.value) {
-                visit(node)
-            }
-        }
-
-        return result.reversed()
-    }
-
     private func dfs(sourceNode: GraphNode, targetNode: GraphNode, visitedNodes: inout Set<String>) -> Bool {
         if sourceNode === targetNode {
             return true
@@ -74,11 +67,9 @@ final class Graph {
 
         visitedNodes.insert(sourceNode.value)
 
-        for neighbor in sourceNode.neighbors {
-            if !visitedNodes.contains(neighbor.value) {
-                if dfs(sourceNode: neighbor, targetNode: targetNode, visitedNodes: &visitedNodes) {
-                    return true
-                }
+        for neighbor in sourceNode.neighbors where !visitedNodes.contains(neighbor.value) {
+            if dfs(sourceNode: neighbor, targetNode: targetNode, visitedNodes: &visitedNodes) {
+                return true
             }
         }
 

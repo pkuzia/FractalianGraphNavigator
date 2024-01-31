@@ -1,3 +1,10 @@
+//
+//  FractalianGraphNavigatorApp.swift
+//  FractalianGraphNavigator
+//
+//  Created by Przemysław Kuzia on 27/01/2024.
+//
+
 import UIKit
 
 public enum Spacing {
@@ -7,6 +14,8 @@ public enum Spacing {
     public static let micro: CGFloat = 4.0
     /// 8
     public static let small: CGFloat = 8.0
+    /// 12
+    public static let medium: CGFloat = 12.0
     /// 16
     public static let base: CGFloat = 16.0
     /// 24
@@ -22,10 +31,8 @@ public enum Spacing {
 }
 
 public enum CornerRadius {
-    /// 4
-    public static let small: CGFloat = 4.0
-    /// 8
-    public static let base: CGFloat = 8.0
-    /// 16
-    public static let large: CGFloat = 16.0
+    /// 6
+    public static let base: CGFloat = 6.0
+    /// 10
+    public static let regular: CGFloat = 10.0
 }

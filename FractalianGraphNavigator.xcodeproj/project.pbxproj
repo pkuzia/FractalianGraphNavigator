@@ -28,6 +28,25 @@
 		066D07902B694693009E60C5 /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D078D2B694693009E60C5 /* Assets+Generated.swift */; };
 		066D07932B6946F7009E60C5 /* String+LocalizedResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D07922B6946F7009E60C5 /* String+LocalizedResources.swift */; };
 		066D07A42B694F3F009E60C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 066D07A32B694F3F009E60C5 /* Localizable.strings */; };
+		066D0A8A2B696100009E60C5 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 066D0A7C2B696100009E60C5 /* Rubik-Bold.ttf */; };
+		066D0A8D2B696100009E60C5 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 066D0A7F2B696100009E60C5 /* Rubik-Medium.ttf */; };
+		066D0A902B696100009E60C5 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 066D0A822B696100009E60C5 /* Rubik-SemiBold.ttf */; };
+		066D0A912B696100009E60C5 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 066D0A832B696100009E60C5 /* Rubik-Light.ttf */; };
+		066D0A942B696100009E60C5 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 066D0A862B696100009E60C5 /* Rubik-Regular.ttf */; };
+		066D0A962B6A64D6009E60C5 /* DirectedGraphGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0A952B6A64D6009E60C5 /* DirectedGraphGenerator.swift */; };
+		066D0C002B6AAAA7009E60C5 /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0BFF2B6AAAA7009E60C5 /* Fonts+Generated.swift */; };
+		066D0C052B6AACB2009E60C5 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C042B6AACB2009E60C5 /* TextStyle.swift */; };
+		066D0C0A2B6AAF59009E60C5 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C092B6AAF59009E60C5 /* StartView.swift */; };
+		066D0C0C2B6AAF8A009E60C5 /* View+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C0B2B6AAF8A009E60C5 /* View+Style.swift */; };
+		066D0C112B6AB06F009E60C5 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C102B6AB06F009E60C5 /* PrimaryButton.swift */; };
+		066D0C132B6AB56D009E60C5 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C122B6AB56D009E60C5 /* SecondaryButton.swift */; };
+		066D0C162B6ABFB1009E60C5 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C152B6ABFB1009E60C5 /* Background.swift */; };
+		066D0C182B6AD422009E60C5 /* BaseLabelsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C172B6AD422009E60C5 /* BaseLabelsGroup.swift */; };
+		06E15C8D2B6AE451008D768F /* StartViewDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E15C8C2B6AE451008D768F /* StartViewDestinations.swift */; };
+		06E15C912B6AE4B1008D768F /* GraphViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E15C902B6AE4B1008D768F /* GraphViewer.swift */; };
+		06E15C932B6AE82D008D768F /* LoadGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E15C922B6AE82D008D768F /* LoadGraphView.swift */; };
+		06E15C952B6AEB2B008D768F /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E15C942B6AEB2B008D768F /* BackButton.swift */; };
+		06E15C982B6AED81008D768F /* BackButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E15C972B6AED81008D768F /* BackButtonModifier.swift */; };
 		3AB5855AF65FF5DD0E58B9D3 /* Pods_FractalianGraphNavigator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7F3DF1BB2EE6704B8FB0D4 /* Pods_FractalianGraphNavigator.framework */; };
 		97E57CCC0F569AB27F13DC1C /* Pods_FractalianGraphNavigatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56E794A60DB6C6F9E5C76F1 /* Pods_FractalianGraphNavigatorTests.framework */; };
 /* End PBXBuildFile section */
@@ -43,7 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0632A53D2B65975B0002EA17 /* FractalianGraphNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FractalianGraphNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0632A53D2B65975B0002EA17 /* Fractalian Graph Navigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fractalian Graph Navigator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0632A5402B65975B0002EA17 /* FractalianGraphNavigatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalianGraphNavigatorApp.swift; sourceTree = "<group>"; };
 		0632A5422B65975B0002EA17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0632A5442B65975C0002EA17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +85,26 @@
 		066D078D2B694693009E60C5 /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
 		066D07922B6946F7009E60C5 /* String+LocalizedResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+LocalizedResources.swift"; sourceTree = "<group>"; };
 		066D07A32B694F3F009E60C5 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		066D0A7C2B696100009E60C5 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		066D0A7F2B696100009E60C5 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		066D0A822B696100009E60C5 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		066D0A832B696100009E60C5 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		066D0A862B696100009E60C5 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		066D0A952B6A64D6009E60C5 /* DirectedGraphGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectedGraphGenerator.swift; sourceTree = "<group>"; };
+		066D0BFF2B6AAAA7009E60C5 /* Fonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
+		066D0C012B6AAB5F009E60C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		066D0C042B6AACB2009E60C5 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		066D0C092B6AAF59009E60C5 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		066D0C0B2B6AAF8A009E60C5 /* View+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Style.swift"; sourceTree = "<group>"; };
+		066D0C102B6AB06F009E60C5 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		066D0C122B6AB56D009E60C5 /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		066D0C152B6ABFB1009E60C5 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		066D0C172B6AD422009E60C5 /* BaseLabelsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabelsGroup.swift; sourceTree = "<group>"; };
+		06E15C8C2B6AE451008D768F /* StartViewDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewDestinations.swift; sourceTree = "<group>"; };
+		06E15C902B6AE4B1008D768F /* GraphViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewer.swift; sourceTree = "<group>"; };
+		06E15C922B6AE82D008D768F /* LoadGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadGraphView.swift; sourceTree = "<group>"; };
+		06E15C942B6AEB2B008D768F /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		06E15C972B6AED81008D768F /* BackButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonModifier.swift; sourceTree = "<group>"; };
 		135AF333E2E61D5D82447E8C /* Pods-FractalianGraphNavigatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FractalianGraphNavigatorTests.debug.xcconfig"; path = "Target Support Files/Pods-FractalianGraphNavigatorTests/Pods-FractalianGraphNavigatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1D3496C7DE39CABD82BBCCD6 /* Pods-FractalianGraphNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FractalianGraphNavigator.debug.xcconfig"; path = "Target Support Files/Pods-FractalianGraphNavigator/Pods-FractalianGraphNavigator.debug.xcconfig"; sourceTree = "<group>"; };
 		61D44552C6CCFDEB13EAF64D /* Pods-FractalianGraphNavigatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FractalianGraphNavigatorTests.release.xcconfig"; path = "Target Support Files/Pods-FractalianGraphNavigatorTests/Pods-FractalianGraphNavigatorTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -108,7 +147,7 @@
 		0632A53E2B65975B0002EA17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0632A53D2B65975B0002EA17 /* FractalianGraphNavigator.app */,
+				0632A53D2B65975B0002EA17 /* Fractalian Graph Navigator.app */,
 				0632A54D2B65975C0002EA17 /* FractalianGraphNavigatorTests.xctest */,
 			);
 			name = Products;
@@ -145,6 +184,7 @@
 			children = (
 				0632A5742B659DDE0002EA17 /* GraphFileReader.swift */,
 				066D07782B66808A009E60C5 /* RandomGraphGenerator.swift */,
+				066D0A952B6A64D6009E60C5 /* DirectedGraphGenerator.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -152,6 +192,9 @@
 		0632A56B2B6597BC0002EA17 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				06E15C8F2B6AE4A1008D768F /* GraphViewer */,
+				06E15C8E2B6AE498008D768F /* LoadGraph */,
+				066D0C062B6AAF24009E60C5 /* Start */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -168,6 +211,7 @@
 		0632A56D2B6597CE0002EA17 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				06E15C962B6AED68008D768F /* ViewModifiers */,
 				066D07922B6946F7009E60C5 /* String+LocalizedResources.swift */,
 				066D07882B69460C009E60C5 /* String+Extension.swift */,
 			);
@@ -177,9 +221,11 @@
 		0632A5722B659CDC0002EA17 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				066D0A782B6960ED009E60C5 /* Fonts */,
 				0632A5472B65975C0002EA17 /* Preview Assets.xcassets */,
 				0632A5442B65975C0002EA17 /* Assets.xcassets */,
 				066D07A32B694F3F009E60C5 /* Localizable.strings */,
+				066D0C012B6AAB5F009E60C5 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -223,6 +269,8 @@
 		066D077F2B694220009E60C5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				066D0C142B6ABFA8009E60C5 /* Views */,
+				066D0C0D2B6AB033009E60C5 /* Buttons */,
 				066D07802B69422B009E60C5 /* Styles */,
 			);
 			path = Components;
@@ -232,9 +280,76 @@
 			isa = PBXGroup;
 			children = (
 				066D078C2B694693009E60C5 /* Constants.swift */,
+				066D0BFF2B6AAAA7009E60C5 /* Fonts+Generated.swift */,
 				066D078D2B694693009E60C5 /* Assets+Generated.swift */,
+				066D0C042B6AACB2009E60C5 /* TextStyle.swift */,
+				066D0C0B2B6AAF8A009E60C5 /* View+Style.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		066D0A782B6960ED009E60C5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				066D0A7C2B696100009E60C5 /* Rubik-Bold.ttf */,
+				066D0A832B696100009E60C5 /* Rubik-Light.ttf */,
+				066D0A7F2B696100009E60C5 /* Rubik-Medium.ttf */,
+				066D0A862B696100009E60C5 /* Rubik-Regular.ttf */,
+				066D0A822B696100009E60C5 /* Rubik-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		066D0C062B6AAF24009E60C5 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				066D0C092B6AAF59009E60C5 /* StartView.swift */,
+				06E15C8C2B6AE451008D768F /* StartViewDestinations.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		066D0C0D2B6AB033009E60C5 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				066D0C102B6AB06F009E60C5 /* PrimaryButton.swift */,
+				066D0C122B6AB56D009E60C5 /* SecondaryButton.swift */,
+				06E15C942B6AEB2B008D768F /* BackButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		066D0C142B6ABFA8009E60C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				066D0C152B6ABFB1009E60C5 /* Background.swift */,
+				066D0C172B6AD422009E60C5 /* BaseLabelsGroup.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06E15C8E2B6AE498008D768F /* LoadGraph */ = {
+			isa = PBXGroup;
+			children = (
+				06E15C922B6AE82D008D768F /* LoadGraphView.swift */,
+			);
+			path = LoadGraph;
+			sourceTree = "<group>";
+		};
+		06E15C8F2B6AE4A1008D768F /* GraphViewer */ = {
+			isa = PBXGroup;
+			children = (
+				06E15C902B6AE4B1008D768F /* GraphViewer.swift */,
+			);
+			path = GraphViewer;
+			sourceTree = "<group>";
+		};
+		06E15C962B6AED68008D768F /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				06E15C972B6AED81008D768F /* BackButtonModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 		0E9BE76F742496328160F397 /* Pods */ = {
@@ -278,7 +393,7 @@
 			);
 			name = FractalianGraphNavigator;
 			productName = FractalianGraphNavigator;
-			productReference = 0632A53D2B65975B0002EA17 /* FractalianGraphNavigator.app */;
+			productReference = 0632A53D2B65975B0002EA17 /* Fractalian Graph Navigator.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0632A54C2B65975C0002EA17 /* FractalianGraphNavigatorTests */ = {
@@ -344,9 +459,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066D0A902B696100009E60C5 /* Rubik-SemiBold.ttf in Resources */,
 				066D07A42B694F3F009E60C5 /* Localizable.strings in Resources */,
+				066D0A912B696100009E60C5 /* Rubik-Light.ttf in Resources */,
 				0632A5482B65975C0002EA17 /* Preview Assets.xcassets in Resources */,
+				066D0A8A2B696100009E60C5 /* Rubik-Bold.ttf in Resources */,
 				0632A5452B65975C0002EA17 /* Assets.xcassets in Resources */,
+				066D0A942B696100009E60C5 /* Rubik-Regular.ttf in Resources */,
+				066D0A8D2B696100009E60C5 /* Rubik-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,16 +603,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				066D0C002B6AAAA7009E60C5 /* Fonts+Generated.swift in Sources */,
 				0632A5752B659DDE0002EA17 /* GraphFileReader.swift in Sources */,
+				066D0C0C2B6AAF8A009E60C5 /* View+Style.swift in Sources */,
+				066D0C132B6AB56D009E60C5 /* SecondaryButton.swift in Sources */,
+				06E15C8D2B6AE451008D768F /* StartViewDestinations.swift in Sources */,
 				066D078A2B69460C009E60C5 /* String+Extension.swift in Sources */,
+				06E15C932B6AE82D008D768F /* LoadGraphView.swift in Sources */,
+				06E15C982B6AED81008D768F /* BackButtonModifier.swift in Sources */,
+				066D0C162B6ABFB1009E60C5 /* Background.swift in Sources */,
+				066D0C182B6AD422009E60C5 /* BaseLabelsGroup.swift in Sources */,
 				066D07792B66808A009E60C5 /* RandomGraphGenerator.swift in Sources */,
 				0632A56F2B6598950002EA17 /* Graph.swift in Sources */,
+				066D0C052B6AACB2009E60C5 /* TextStyle.swift in Sources */,
+				066D0A962B6A64D6009E60C5 /* DirectedGraphGenerator.swift in Sources */,
 				0632A5432B65975B0002EA17 /* ContentView.swift in Sources */,
 				0632A5712B6598B10002EA17 /* GraphNode.swift in Sources */,
 				066D07902B694693009E60C5 /* Assets+Generated.swift in Sources */,
 				066D07932B6946F7009E60C5 /* String+LocalizedResources.swift in Sources */,
 				0632A5412B65975B0002EA17 /* FractalianGraphNavigatorApp.swift in Sources */,
+				06E15C952B6AEB2B008D768F /* BackButton.swift in Sources */,
+				06E15C912B6AE4B1008D768F /* GraphViewer.swift in Sources */,
 				066D078F2B694693009E60C5 /* Constants.swift in Sources */,
+				066D0C112B6AB06F009E60C5 /* PrimaryButton.swift in Sources */,
+				066D0C0A2B6AAF59009E60C5 /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +767,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -649,12 +784,12 @@
 				DEVELOPMENT_TEAM = ATFEU26LMZ;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FractalianGraphNavigator/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fractalian Graph Navigator";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -665,12 +800,13 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = przemyslaw.kuzia.FractalianGraphNavigator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				PRODUCT_MODULE_NAME = FractalianGraphNavigator;
+				PRODUCT_NAME = "Fractalian Graph Navigator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -688,12 +824,12 @@
 				DEVELOPMENT_TEAM = ATFEU26LMZ;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FractalianGraphNavigator/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fractalian Graph Navigator";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -704,12 +840,13 @@
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = przemyslaw.kuzia.FractalianGraphNavigator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				PRODUCT_MODULE_NAME = FractalianGraphNavigator;
+				PRODUCT_NAME = "Fractalian Graph Navigator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

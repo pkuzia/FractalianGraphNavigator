@@ -8,7 +8,7 @@
 import SwiftUI
 import UniformTypeIdentifiers
 
-struct ContentView: View {
+struct ContentView1: View {
     @State private var graphFileReader = GraphFileReader()
     @State private var isFilePickerPresented = false
 
@@ -19,7 +19,6 @@ struct ContentView: View {
         VStack {
             Text(text)
             Text(text1)
-//                .foregroundc
 //            Button("Wybierz plik") {
 //                isFilePickerPresented.toggle()
 //            }
@@ -35,15 +34,20 @@ struct ContentView: View {
 //            }
         }
         .onAppear(perform: {
-//            let start = CFAbsoluteTimeGetCurrent()
-//            let acyclicGenerator = DirectedGraphGenerator()
-//            let graph = acyclicGenerator.generateDAG()
-//            let diff = CFAbsoluteTimeGetCurrent() - start
-//            text = "Took \(diff) seconds"
-//
-//            if let node = graph.nodes.randomElement()?.value {
-//                text1 = "Random element: \(node.value) \n Number of neibours: \(node.neighbors.count)"
-//            }
+            let start = CFAbsoluteTimeGetCurrent()
+
+            let x123 = RandomGraphGenerator()
+            let graph = x123.generateGraph(nodes: 10, maxEdgesPerNode: 5)
+
+//            // Przykład użycia
+//            let vertices = 20000
+//            let edgesPerVertex = 1000
+//            let generator = ModifiedBarabasiAlbertGraphGenerator(vertices: vertices, maxEdgesPerVertex: edgesPerVertex)
+//            let generatedGraph = generator.getGraph()
+
+            let diff = CFAbsoluteTimeGetCurrent() - start
+            text = "Took \(diff) seconds"
+
         })
     }
 
@@ -65,5 +69,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView1()
 }
