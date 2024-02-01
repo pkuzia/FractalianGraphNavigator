@@ -10,6 +10,21 @@ import Foundation
 
 internal extension String {
 
+    /// Something went wrong.
+    static var commonErrorMessage: String {
+      return "common_error_message".localized
+    }
+
+    /// OK
+    static var commonErrorOk: String {
+      return "common_error_ok".localized
+    }
+
+    /// Error
+    static var commonErrorTitle: String {
+      return "common_error_title".localized
+    }
+
     /// Get ready to dive into your data adventure! Select a file and embark on a journey of insights. It's just a click away – load your graph now and let the exploration begin.
     static var loadGraphSubtitle: String {
       return "load_graph_subtitle".localized

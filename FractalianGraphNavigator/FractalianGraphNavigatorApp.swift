@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct FractalianGraphNavigatorApp: App {
+
+    private let graphManager = GraphManager()
+
     var body: some Scene {
         WindowGroup {
-            StartView()
+//            StartView()
+//                .environmentObject(graphManager)
+            GraphNodeView(viewData: GraphNodeViewData(title: "", nodes: []), loadNextItems: {})
         }
     }
 }

@@ -17,8 +17,8 @@ private enum GraphMLKeys {
 
 final class GraphFileReader {
 
-    func readGraphFromFile(atPath path: String) throws -> Graph {
-        try GraphMLParser(path: path).parse()
+    func readGraphFromFile(atPath path: String) async throws -> Graph {
+        try await GraphMLParser(path: path).parse()
     }
 }
 
@@ -36,19 +36,24 @@ private class GraphMLParser: NSObject {
         super.init()
     }
 
-    func parse() throws -> Graph {
-        if let inputStream = InputStream(fileAtPath: path) {
-            inputStream.open()
-            parse(inputStream: inputStream)
-            inputStream.close()
+    func parse() async throws -> Graph {
+        return try await withCheckedThrowingContinuation { continuation in
+            if let inputStream = InputStream(fileAtPath: path) {
+                inputStream.open()
+                parse(inputStream: inputStream)
+                inputStream.close()
 
-            if let error = error {
-                throw error
+                if let error = error {
+                    continuation.resume(throwing: error)
+                } else {
+                    Task {
+                        try await Task.sleep(nanoseconds: 2 * 1_000_000_000) // Opóźnienie o 2 sekundy
+                        continuation.resume(returning: graph)
+                    }
+                }
             } else {
-                return graph
+                continuation.resume(throwing: GraphReaderError.pathError)
             }
-        } else {
-            throw GraphReaderError.pathError
         }
     }
 

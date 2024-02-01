@@ -6,6 +6,10 @@
   
 */
 
+"common_error_title" = "Error";
+"common_error_message" = "Something went wrong.";
+"common_error_ok" = "OK";
+
 "start_screen_title" = "Explore graphs";
 "start_screen_subtitle" = "Empower your data journey with seamless graph creation and exploration. Discover the potential of visualization.";
 "start_screen_buttons_generate" = "Generate graph";

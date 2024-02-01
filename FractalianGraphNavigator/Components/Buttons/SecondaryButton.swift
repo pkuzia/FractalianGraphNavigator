@@ -22,7 +22,8 @@ struct SecondaryButton: View {
                 .style(.headline3)
                 .foregroundColor(.primaryGreen)
                 .padding(.horizontal, Spacing.base)
-                .frame(width: .infinity, height: 54.0)
+                .frame(maxWidth: .infinity)
+                .frame(height: 54.0)
                 .overlay(
                     RoundedRectangle(cornerRadius: CornerRadius.base)
                         .stroke(Color.green, lineWidth: 1.0)

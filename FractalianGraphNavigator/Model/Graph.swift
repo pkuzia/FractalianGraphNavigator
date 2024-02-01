@@ -16,6 +16,7 @@ enum GraphReaderError: Error {
 final class Graph {
     var nodes: [String: GraphNode] = [:]
 
+    @discardableResult
     func addNode(id: String) throws -> GraphNode {
         if nodes[id] != nil {
             throw GraphReaderError.structuralError

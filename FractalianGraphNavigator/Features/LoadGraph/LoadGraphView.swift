@@ -6,9 +6,19 @@
 //
 
 import SwiftUI
+import UniformTypeIdentifiers
 
+@MainActor
 struct LoadGraphView: View {
-    @Environment(\.dismiss) var dismissAction
+
+    @EnvironmentObject private var graphManager: GraphManager
+    @Environment(\.dismiss) private var dismissAction
+
+    @State private var isFilePickerPresented = false
+    @State private var isLoading: Bool = false
+    @State private var isError: Bool = false
+    
+    @Binding var path: NavigationPath
 
     var body: some View {
         ZStack {
@@ -24,16 +34,28 @@ struct LoadGraphView: View {
                 PrimaryButton(
                     title: .startScreenButtonsLoad,
                     action: {
-                        //                        path.append(StartViewDestinations.loadGraph)
+                        isFilePickerPresented.toggle()
                     }
                 )
             }
         }
         .padding(.horizontal, Spacing.xLarge)
+        .fileImporter(
+            isPresented: $isFilePickerPresented,
+            allowedContentTypes: [UTType.xml],
+            onCompletion: handleFileSelection
+        )
+        .modifier(
+            LoadGraphDestinationsHandler()
+        )
         .modifier(
             BackButtonModifier(dismissAction: {
                 dismissAction()
             })
+        )
+        .baseView(
+            isLoading: $isLoading,
+            isError: $isError
         )
     }
 }
@@ -53,6 +75,31 @@ private struct CenterLogo: View {
     }
 }
 
+extension LoadGraphView {
+    private func handleFileSelection(result: Result<URL, Error>) {
+        switch result {
+        case .success(let selectedURL):
+            Task {
+                isLoading = true
+                do {
+                    graphManager.graph = try await GraphFileReader().readGraphFromFile(
+                        atPath: selectedURL.path
+                    )
+                    isLoading = false
+                    path.append(LoadGraphDestinations.graphViewer)
+                } catch {
+                    isError = true
+                    isLoading = false
+                }
+            }
+        case .failure:
+            isError = true
+        }
+    }
+}
+
 #Preview {
-    LoadGraphView()
+    LoadGraphView(
+        path: .constant(NavigationPath())
+    )
 }

@@ -19,7 +19,9 @@ struct StartView: View {
                 ContextBackground()
                 ContentView(path: $path)
             }
-            .modifier(StartViewDestinationHandler())
+            .modifier(
+                StartViewDestinationHandler(path: $path)
+            )
         }
     }
 }

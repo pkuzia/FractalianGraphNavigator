@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BackButtonModifier: ViewModifier {
     var dismissAction: () -> Void
-    
+
     func body(content: Content) -> some View {
         content
             .navigationBarBackButtonHidden(true)

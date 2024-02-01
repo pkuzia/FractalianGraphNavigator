@@ -13,12 +13,14 @@ enum StartViewDestinations {
 }
 
 struct StartViewDestinationHandler: ViewModifier {
+    @Binding var path: NavigationPath
+
     func body(content: Content) -> some View {
         content
             .navigationDestination(for: StartViewDestinations.self) { destination in
                 switch destination {
                 case .loadGraph:
-                    LoadGraphView()
+                    LoadGraphView(path: $path)
                 case .generateGraph:
                     Text("generateGraph")
                 }
