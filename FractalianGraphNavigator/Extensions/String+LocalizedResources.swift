@@ -25,6 +25,26 @@ internal extension String {
       return "common_error_title".localized
     }
 
+    /// Previous folder
+    static var graphViewerButtonsPrevious: String {
+      return "graph_viewer_buttons_previous".localized
+    }
+
+    /// This folder is empty.
+    static var graphViewerEmptyFolder: String {
+      return "graph_viewer_empty_folder".localized
+    }
+
+    /// Graph viewer
+    static var graphViewerNavBarTitle: String {
+      return "graph_viewer_nav_bar_title".localized
+    }
+
+    /// Load graph
+    static var loadGraphNavBarTitle: String {
+      return "load_graph_nav_bar_title".localized
+    }
+
     /// Get ready to dive into your data adventure! Select a file and embark on a journey of insights. It's just a click away – load your graph now and let the exploration begin.
     static var loadGraphSubtitle: String {
       return "load_graph_subtitle".localized

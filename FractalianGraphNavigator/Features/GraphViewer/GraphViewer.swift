@@ -18,63 +18,95 @@ struct GraphViewer: View {
             VStack(spacing: Spacing.regular) {
                 VStack(alignment: .leading, spacing: Spacing.small) {
                     Spacer(minLength: Spacing.regular)
-
-                    if let activeNode = graphManager.activeNode {
-                        Text(activeNode.title)
-                            .style(.headline3)
-                            .foregroundColor(.textBlack)
-                            .padding(.horizontal, Spacing.regular)
-
-                        List {
-                            ForEach(activeNode.nodes, id: \.id) { node in
-                                GraphNodeView(viewData: node)
-                                    .onTapGesture {
-                                        print("Tap")
-                                    }
-                                    .onAppear {
-                                        if node.id == activeNode.nodes.last?.id {
-                                            graphManager.requestNextPage()
-                                        }
-                                    }
-                            }
-                            .listRowInsets(.init())
-                            .listRowBackground(Color.clear)
-                            .listRowSeparator(.hidden)
-                        }
-                        .padding(.vertical, Spacing.small)
-                        .listStyle(.plain)
-                        .scrollIndicators(.hidden)
-                        .background {
-                            Color.primaryWhite
-                        }
-                        .cornerRadius(10.0)
-                        .shadow(
-                            color: .backgroundShadow,
-                            radius: 8.0
-                        )
-                    }
+                    NodeView()
                 }
 
                 SecondaryButton(
-                    title: "Previous folder", action: {}
+                    title: String.graphViewerButtonsPrevious, action: {
+                        graphManager.restorePreviousGraphNode()
+                    }
                 )
                 .padding(.horizontal, Spacing.regular)
 
             }
             .padding(.horizontal, Spacing.base)
         }
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                Text("XX")
-                    .style(.headline3)
-                    .foregroundColor(.textBlack)
-            }
-        }
+        .modifier(
+            NavBarTitleModifier(
+                title: String.graphViewerNavBarTitle
+            )
+        )
         .modifier(
             BackButtonModifier(dismissAction: {
                 dismissAction()
             })
         )
+    }
+}
+
+private struct NodeView: View {
+
+    @EnvironmentObject private var graphManager: GraphManager
+
+    var body: some View {
+        if let activeNode = graphManager.activeNode {
+            Text(activeNode.title)
+                .style(.headline3)
+                .foregroundColor(.textBlack)
+                .padding(.horizontal, Spacing.regular)
+
+            if !activeNode.nodes.isEmpty {
+                ListView(activeNode: activeNode)
+                    .padding(.vertical, Spacing.small)
+                    .listStyle(.plain)
+                    .scrollIndicators(.hidden)
+                    .background {
+                        Color.primaryWhite
+                    }
+                    .cornerRadius(CornerRadius.regular)
+                    .shadow(
+                        color: .backgroundShadow,
+                        radius: 8.0
+                    )
+            } else {
+                GraphEmptyView()
+                    .padding(.vertical, Spacing.small)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background {
+                        Color.primaryWhite
+                    }
+                    .cornerRadius(CornerRadius.regular)
+                    .shadow(
+                        color: .backgroundShadow,
+                        radius: 8.0
+                    )
+            }
+        }
+    }
+}
+
+private struct ListView: View {
+
+    @EnvironmentObject private var graphManager: GraphManager
+    var activeNode: GraphViewData
+
+    var body: some View {
+        List {
+            ForEach(activeNode.nodes, id: \.id) { node in
+                GraphNodeView(viewData: node)
+                    .onTapGesture {
+                        graphManager.selectNewNode(id: node.id)
+                    }
+                    .onAppear {
+                        if node.id == activeNode.nodes.last?.id {
+                            graphManager.requestNextPage()
+                        }
+                    }
+            }
+            .listRowInsets(.init())
+            .listRowBackground(Color.clear)
+            .listRowSeparator(.hidden)
+        }
     }
 }
 

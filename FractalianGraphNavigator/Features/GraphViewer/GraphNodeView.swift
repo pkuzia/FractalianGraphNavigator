@@ -20,10 +20,17 @@ struct GraphNodeView: View {
                     .foregroundColor(.textBlack)
                     .padding(.horizontal, Spacing.regular)
 
-                ListView(
-                    nodes: $viewData.nodes,
-                    id: $viewData.id
-                )
+                if !viewData.nodes.isEmpty {
+                    ListView(
+                        nodes: $viewData.nodes,
+                        id: $viewData.id
+                    )
+                } else {
+                    GraphEmptyView()
+                        .frame(height: 170)
+                        .frame(maxWidth: .infinity)
+                        .padding(.horizontal, Spacing.base)
+                }
 
                 Spacer()
             }
@@ -65,15 +72,28 @@ private struct ListView: View {
     }
 }
 
+
+
 #Preview {
-    GraphNodeView(
-        viewData: GraphNodeViewData(
-            id: UUID(),
-            title: "n1231",
-            nodes: [
-                GraphInnerNodeViewData(value: "n1"),
-                GraphInnerNodeViewData(value: "n2"),
-                GraphInnerNodeViewData(value: "n3")
-            ])
-    )
+    VStack {
+        GraphNodeView(
+            viewData: GraphNodeViewData(
+                id: UUID(),
+                title: "n1231",
+                nodes: [
+                    GraphInnerNodeViewData(value: "n1"),
+                    GraphInnerNodeViewData(value: "n2"),
+                    GraphInnerNodeViewData(value: "n3")
+                ])
+        )
+
+        GraphNodeView(
+            viewData: GraphNodeViewData(
+                id: UUID(),
+                title: "n1231",
+                nodes: [])
+        )
+    }
+    .environmentObject(GraphManager())
+
 }

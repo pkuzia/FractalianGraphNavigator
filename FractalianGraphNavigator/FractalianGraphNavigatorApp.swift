@@ -16,16 +16,6 @@ struct FractalianGraphNavigatorApp: App {
         WindowGroup {
             StartView()
                 .environmentObject(graphManager)
-            //            GraphViewer()
         }
     }
-
-    //    let dataModel = MyDataModel()
-    //
-    //    var body: some Scene {
-    //        WindowGroup {
-    //            ContentView12()
-    //                .environmentObject(dataModel)
-    //        }
-    //    }
 }

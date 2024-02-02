@@ -104,4 +104,32 @@ final class GraphManagerTests: XCTestCase {
         node = graphManager.activeNode!.nodes.first(where: { $0.title == "n1" })!
         XCTAssertTrue(node.nodes.count == 33)
     }
+
+    func testChangingFolder() {
+        let graph = Graph()
+
+        for index in 0...100 {
+            _ = try? graph.addNode(id: "n\(index)")
+        }
+
+        for index in 1...50 {
+            try? graph.addEdge(fromId: "n0", toId: "n\(index)")
+        }
+
+        for index in 2...34 {
+            try? graph.addEdge(fromId: "n1", toId: "n\(index)")
+        }
+
+        let graphManager = GraphManager()
+        graphManager.graph = graph
+
+        let n1Node = graph.nodes.first(where: { $0.key == "n1" })!.value
+        XCTAssertTrue(graphManager.activeNode!.title == "n0")
+
+        graphManager.selectNewNode(id: n1Node.id)
+        XCTAssertTrue(graphManager.activeNode!.title == "n1")
+
+        graphManager.restorePreviousGraphNode()
+        XCTAssertTrue(graphManager.activeNode!.title == "n0")
+    }
 }

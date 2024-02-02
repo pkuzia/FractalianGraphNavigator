@@ -53,6 +53,11 @@ struct LoadGraphView: View {
                 dismissAction()
             })
         )
+        .modifier(
+            NavBarTitleModifier(
+                title: String.loadGraphNavBarTitle
+            )
+        )
         .baseView(
             isLoading: $isLoading,
             isError: $isError
@@ -79,7 +84,7 @@ extension LoadGraphView {
     private func handleFileSelection(result: Result<URL, Error>) {
         switch result {
         case .success(let selectedURL):
-            Task {
+            Task(priority: .userInitiated) {
                 isLoading = true
                 do {
                     graphManager.graph = try await GraphFileReader().readGraphFromFile(

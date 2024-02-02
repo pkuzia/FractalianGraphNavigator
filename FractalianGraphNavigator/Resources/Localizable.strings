@@ -15,5 +15,10 @@
 "start_screen_buttons_generate" = "Generate graph";
 "start_screen_buttons_load" = "Load graph";
 
+"load_graph_nav_bar_title" = "Load graph";
 "load_graph_title" = "Load Your Graph";
 "load_graph_subtitle" = "Get ready to dive into your data adventure! Select a file and embark on a journey of insights. It's just a click away – load your graph now and let the exploration begin.";
+
+"graph_viewer_nav_bar_title" = "Graph viewer";
+"graph_viewer_buttons_previous" = "Previous folder";
+"graph_viewer_empty_folder" = "This folder is empty.";

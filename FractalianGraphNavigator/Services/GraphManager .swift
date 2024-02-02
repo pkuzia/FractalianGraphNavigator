@@ -19,6 +19,7 @@ final class GraphManager: ObservableObject {
 
     @Published var activeNode: GraphViewData?
 
+    private var graphHistory: [GraphNode] = []
     private var activeGraphNode: GraphNode?
     private var activeNodePage: Int = Constants.firstPage
     private var activeNodesPages: [UUID: Int] = [:]
@@ -60,7 +61,25 @@ final class GraphManager: ObservableObject {
         }
     }
 
+    func selectNewNode(id: UUID) {
+        if let activeGraphNode = activeGraphNode {
+            graphHistory.append(activeGraphNode)
+        }
+
+        if let node = graph?.nodes.first(where: { $0.value.id == id })?.value {
+            setActiveNode(node)
+        }
+    }
+
+    func restorePreviousGraphNode() {
+        if let previousGrapNode = graphHistory.popLast() {
+            setActiveNode(previousGrapNode)
+        }
+    }
+
     private func setInitialValue() {
+        graphHistory.removeAll()
+
         var firstNode: GraphNode?
 
         if let n0Node = graph?.nodes[Constants.n0Index] {
@@ -69,14 +88,19 @@ final class GraphManager: ObservableObject {
             firstNode = graph?.nodes.first?.value
         }
 
-        guard let firstNode = firstNode else { return }
+        if let firstNode = firstNode {
+            setActiveNode(firstNode)
+        }
+    }
 
-        activeGraphNode = firstNode
+    private func setActiveNode(_ node: GraphNode) {
+        activeGraphNode = node
+
         activeNode = GraphViewData(
-            id: firstNode.id,
-            title: firstNode.value,
+            id: node.id,
+            title: node.value,
             nodes: buildNodesViewData(
-                nodes: firstNode.neighbors
+                nodes: node.neighbors
             )
         )
     }
