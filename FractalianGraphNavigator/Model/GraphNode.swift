@@ -7,7 +7,8 @@
 
 import Foundation
 
-final class GraphNode {
+final class GraphNode: Identifiable {
+    var id = UUID()
     var value: String
     var neighbors: [GraphNode] = []
 

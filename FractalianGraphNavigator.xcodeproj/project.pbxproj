@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060374792B6D7DEA00C96778 /* PaginationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060374782B6D7DEA00C96778 /* PaginationData.swift */; };
 		0632A5412B65975B0002EA17 /* FractalianGraphNavigatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A5402B65975B0002EA17 /* FractalianGraphNavigatorApp.swift */; };
 		0632A5432B65975B0002EA17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A5422B65975B0002EA17 /* ContentView.swift */; };
 		0632A5452B65975C0002EA17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0632A5442B65975C0002EA17 /* Assets.xcassets */; };
@@ -15,7 +16,6 @@
 		0632A56F2B6598950002EA17 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A56E2B6598950002EA17 /* Graph.swift */; };
 		0632A5712B6598B10002EA17 /* GraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A5702B6598B10002EA17 /* GraphNode.swift */; };
 		0632A5752B659DDE0002EA17 /* GraphFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A5742B659DDE0002EA17 /* GraphFileReader.swift */; };
-		0632A57B2B6672FE0002EA17 /* GraphFileReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A57A2B6672FE0002EA17 /* GraphFileReaderTests.swift */; };
 		0632A6E62B6676450002EA17 /* GraphWithCycles.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0632A6E52B6676450002EA17 /* GraphWithCycles.xml */; };
 		066CCCA92B6C0A0A00724E2C /* GraphManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCA82B6C0A0A00724E2C /* GraphManager .swift */; };
 		066CCCAB2B6C124400724E2C /* LoadGraphDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCAA2B6C124400724E2C /* LoadGraphDestinations.swift */; };
@@ -24,6 +24,8 @@
 		066CCCB12B6C362B00724E2C /* GraphInnerNodeViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCB02B6C362B00724E2C /* GraphInnerNodeViewData.swift */; };
 		066CCCB42B6C36DF00724E2C /* GraphNodeViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCB32B6C36DF00724E2C /* GraphNodeViewData.swift */; };
 		066CCCB62B6C3C6800724E2C /* GraphViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCB52B6C3C6800724E2C /* GraphViewData.swift */; };
+		066CCCB82B6CD09400724E2C /* GraphFileReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCB72B6CD09400724E2C /* GraphFileReaderTests.swift */; };
+		066CCCBA2B6CD0A500724E2C /* GraphManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCB92B6CD0A500724E2C /* GraphManagerTests.swift */; };
 		066D07732B667C8A009E60C5 /* GraphWithoutCycles.xml in Resources */ = {isa = PBXBuildFile; fileRef = 066D07722B667C8A009E60C5 /* GraphWithoutCycles.xml */; };
 		066D07762B667D6E009E60C5 /* GraphCorruptedXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = 066D07742B667D6E009E60C5 /* GraphCorruptedXML.xml */; };
 		066D07772B667D6E009E60C5 /* GraphCorruptedStructure.xml in Resources */ = {isa = PBXBuildFile; fileRef = 066D07752B667D6E009E60C5 /* GraphCorruptedStructure.xml */; };
@@ -49,6 +51,7 @@
 		066D0C132B6AB56D009E60C5 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C122B6AB56D009E60C5 /* SecondaryButton.swift */; };
 		066D0C162B6ABFB1009E60C5 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C152B6ABFB1009E60C5 /* Background.swift */; };
 		066D0C182B6AD422009E60C5 /* BaseLabelsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C172B6AD422009E60C5 /* BaseLabelsGroup.swift */; };
+		06AAEC2C2B6D16DC0000FDA8 /* Test123.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AAEC2B2B6D16DC0000FDA8 /* Test123.swift */; };
 		06E15C8D2B6AE451008D768F /* StartViewDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E15C8C2B6AE451008D768F /* StartViewDestinations.swift */; };
 		06E15C912B6AE4B1008D768F /* GraphViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E15C902B6AE4B1008D768F /* GraphViewer.swift */; };
 		06E15C932B6AE82D008D768F /* LoadGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E15C922B6AE82D008D768F /* LoadGraphView.swift */; };
@@ -71,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		060374782B6D7DEA00C96778 /* PaginationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationData.swift; sourceTree = "<group>"; };
 		0632A53D2B65975B0002EA17 /* Fractalian Graph Navigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fractalian Graph Navigator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0632A5402B65975B0002EA17 /* FractalianGraphNavigatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalianGraphNavigatorApp.swift; sourceTree = "<group>"; };
 		0632A5422B65975B0002EA17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,7 +85,6 @@
 		0632A56E2B6598950002EA17 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		0632A5702B6598B10002EA17 /* GraphNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphNode.swift; sourceTree = "<group>"; };
 		0632A5742B659DDE0002EA17 /* GraphFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphFileReader.swift; sourceTree = "<group>"; };
-		0632A57A2B6672FE0002EA17 /* GraphFileReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphFileReaderTests.swift; sourceTree = SOURCE_ROOT; };
 		0632A6E52B6676450002EA17 /* GraphWithCycles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GraphWithCycles.xml; sourceTree = "<group>"; };
 		066CCCA82B6C0A0A00724E2C /* GraphManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphManager .swift"; sourceTree = "<group>"; };
 		066CCCAA2B6C124400724E2C /* LoadGraphDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadGraphDestinations.swift; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 		066CCCB02B6C362B00724E2C /* GraphInnerNodeViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphInnerNodeViewData.swift; sourceTree = "<group>"; };
 		066CCCB32B6C36DF00724E2C /* GraphNodeViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphNodeViewData.swift; sourceTree = "<group>"; };
 		066CCCB52B6C3C6800724E2C /* GraphViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewData.swift; sourceTree = "<group>"; };
+		066CCCB72B6CD09400724E2C /* GraphFileReaderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphFileReaderTests.swift; sourceTree = "<group>"; };
+		066CCCB92B6CD0A500724E2C /* GraphManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphManagerTests.swift; sourceTree = "<group>"; };
 		066D07722B667C8A009E60C5 /* GraphWithoutCycles.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GraphWithoutCycles.xml; sourceTree = "<group>"; };
 		066D07742B667D6E009E60C5 /* GraphCorruptedXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GraphCorruptedXML.xml; sourceTree = "<group>"; };
 		066D07752B667D6E009E60C5 /* GraphCorruptedStructure.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GraphCorruptedStructure.xml; sourceTree = "<group>"; };
@@ -116,6 +121,7 @@
 		066D0C122B6AB56D009E60C5 /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		066D0C152B6ABFB1009E60C5 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 		066D0C172B6AD422009E60C5 /* BaseLabelsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabelsGroup.swift; sourceTree = "<group>"; };
+		06AAEC2B2B6D16DC0000FDA8 /* Test123.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test123.swift; sourceTree = "<group>"; };
 		06E15C8C2B6AE451008D768F /* StartViewDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewDestinations.swift; sourceTree = "<group>"; };
 		06E15C902B6AE4B1008D768F /* GraphViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewer.swift; sourceTree = "<group>"; };
 		06E15C922B6AE82D008D768F /* LoadGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadGraphView.swift; sourceTree = "<group>"; };
@@ -260,8 +266,9 @@
 		0632A5792B6672620002EA17 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0632A57A2B6672FE0002EA17 /* GraphFileReaderTests.swift */,
+				066CCCB72B6CD09400724E2C /* GraphFileReaderTests.swift */,
 				066D077A2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift */,
+				066CCCB92B6CD0A500724E2C /* GraphManagerTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -280,9 +287,10 @@
 		066CCCB22B6C36AC00724E2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				066CCCB02B6C362B00724E2C /* GraphInnerNodeViewData.swift */,
-				066CCCB32B6C36DF00724E2C /* GraphNodeViewData.swift */,
 				066CCCB52B6C3C6800724E2C /* GraphViewData.swift */,
+				066CCCB32B6C36DF00724E2C /* GraphNodeViewData.swift */,
+				066CCCB02B6C362B00724E2C /* GraphInnerNodeViewData.swift */,
+				060374782B6D7DEA00C96778 /* PaginationData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -373,6 +381,7 @@
 			children = (
 				066CCCB22B6C36AC00724E2C /* Model */,
 				06E15C902B6AE4B1008D768F /* GraphViewer.swift */,
+				06AAEC2B2B6D16DC0000FDA8 /* Test123.swift */,
 				066CCCAC2B6C2F5700724E2C /* GraphNodeView.swift */,
 				066CCCAE2B6C310E00724E2C /* GraphNodeInnerView.swift */,
 			);
@@ -642,6 +651,7 @@
 				066D0C002B6AAAA7009E60C5 /* Fonts+Generated.swift in Sources */,
 				0632A5752B659DDE0002EA17 /* GraphFileReader.swift in Sources */,
 				066CCCB12B6C362B00724E2C /* GraphInnerNodeViewData.swift in Sources */,
+				06AAEC2C2B6D16DC0000FDA8 /* Test123.swift in Sources */,
 				066D0C0C2B6AAF8A009E60C5 /* View+Style.swift in Sources */,
 				066D0C132B6AB56D009E60C5 /* SecondaryButton.swift in Sources */,
 				06E15C8D2B6AE451008D768F /* StartViewDestinations.swift in Sources */,
@@ -668,6 +678,7 @@
 				06E15C912B6AE4B1008D768F /* GraphViewer.swift in Sources */,
 				066D078F2B694693009E60C5 /* Constants.swift in Sources */,
 				066D0C112B6AB06F009E60C5 /* PrimaryButton.swift in Sources */,
+				060374792B6D7DEA00C96778 /* PaginationData.swift in Sources */,
 				066D0C0A2B6AAF59009E60C5 /* StartView.swift in Sources */,
 				066CCCAD2B6C2F5700724E2C /* GraphNodeView.swift in Sources */,
 				066CCCB42B6C36DF00724E2C /* GraphNodeViewData.swift in Sources */,
@@ -679,9 +690,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				066D077E2B668CAB009E60C5 /* GraphTests.swift in Sources */,
+				066CCCBA2B6CD0A500724E2C /* GraphManagerTests.swift in Sources */,
+				066CCCB82B6CD09400724E2C /* GraphFileReaderTests.swift in Sources */,
 				0632A5522B65975C0002EA17 /* FractalianGraphNavigatorTests.swift in Sources */,
 				066D077B2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift in Sources */,
-				0632A57B2B6672FE0002EA17 /* GraphFileReaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,7 +745,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -796,7 +808,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -834,8 +846,8 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Fractalian Graph Navigator";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -874,8 +886,8 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Fractalian Graph Navigator";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -914,7 +926,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FractalianGraphNavigator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FractalianGraphNavigator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fractalian Graph Navigator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fractalian Graph Navigator";
 			};
 			name = Debug;
 		};
@@ -936,7 +948,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FractalianGraphNavigator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FractalianGraphNavigator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fractalian Graph Navigator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fractalian Graph Navigator";
 			};
 			name = Release;
 		};

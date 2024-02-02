@@ -9,69 +9,50 @@ import SwiftUI
 
 struct GraphViewer: View {
 
+    @EnvironmentObject private var graphManager: GraphManager
     @Environment(\.dismiss) private var dismissAction
-
-    @StateObject var graphViewData = GraphViewData(
-        title: "nXX",
-        nodes: [
-            GraphNodeViewData(
-                title: "n1234",
-                nodes: [
-                    GraphInnerNodeViewData(value: "n997"),
-                    GraphInnerNodeViewData(value: "n998"),
-                    GraphInnerNodeViewData(value: "n999")
-                ]
-            ),
-            GraphNodeViewData(
-                title: "ABC",
-                nodes: [
-                    GraphInnerNodeViewData(value: "XX"),
-                    GraphInnerNodeViewData(value: "YY"),
-                    GraphInnerNodeViewData(value: "ZZ")
-                ]
-            ),
-            GraphNodeViewData(
-                title: "DVF",
-                nodes: [
-                    GraphInnerNodeViewData(value: "124"),
-                    GraphInnerNodeViewData(value: "n912598"),
-                    GraphInnerNodeViewData(value: "7458")
-                ]
-            )
-        ]
-    )
 
     var body: some View {
         ZStack {
             Background()
             VStack(spacing: Spacing.regular) {
                 VStack(alignment: .leading, spacing: Spacing.small) {
-                    Spacer(minLength: Spacing.large)
+                    Spacer(minLength: Spacing.regular)
 
-                    Text(graphViewData.title)
-                        .style(.headline3)
-                        .foregroundColor(.textBlack)
-                        .padding(.horizontal, Spacing.regular)
+                    if let activeNode = graphManager.activeNode {
+                        Text(activeNode.title)
+                            .style(.headline3)
+                            .foregroundColor(.textBlack)
+                            .padding(.horizontal, Spacing.regular)
 
-                    List {
-                        ForEach(graphViewData.nodes, id: \.id) { node in
-                            GraphNodeView(viewData: node, loadNextItems: {})
+                        List {
+                            ForEach(activeNode.nodes, id: \.id) { node in
+                                GraphNodeView(viewData: node)
+                                    .onTapGesture {
+                                        print("Tap")
+                                    }
+                                    .onAppear {
+                                        if node.id == activeNode.nodes.last?.id {
+                                            graphManager.requestNextPage()
+                                        }
+                                    }
+                            }
+                            .listRowInsets(.init())
+                            .listRowBackground(Color.clear)
+                            .listRowSeparator(.hidden)
                         }
-                        .listRowInsets(.init())
-                        .listRowBackground(Color.clear)
-                        .listRowSeparator(.hidden)
+                        .padding(.vertical, Spacing.small)
+                        .listStyle(.plain)
+                        .scrollIndicators(.hidden)
+                        .background {
+                            Color.primaryWhite
+                        }
+                        .cornerRadius(10.0)
+                        .shadow(
+                            color: .backgroundShadow,
+                            radius: 8.0
+                        )
                     }
-                    .padding(.vertical, Spacing.small)
-                    .listStyle(.plain)
-                    .scrollIndicators(.hidden)
-                    .background {
-                        Color.primaryWhite
-                    }
-                    .cornerRadius(10.0)
-                    .shadow(
-                        color: .backgroundShadow,
-                        radius: 8.0
-                    )
                 }
 
                 SecondaryButton(
@@ -81,6 +62,13 @@ struct GraphViewer: View {
 
             }
             .padding(.horizontal, Spacing.base)
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("XX")
+                    .style(.headline3)
+                    .foregroundColor(.textBlack)
+            }
         }
         .modifier(
             BackButtonModifier(dismissAction: {
@@ -92,4 +80,5 @@ struct GraphViewer: View {
 
 #Preview {
     GraphViewer()
+        .environmentObject(GraphManager())
 }

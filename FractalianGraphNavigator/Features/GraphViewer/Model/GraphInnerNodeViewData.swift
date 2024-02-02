@@ -7,7 +7,22 @@
 
 import Foundation
 
-struct GraphInnerNodeViewData: Identifiable {
-    let id = UUID()
+class GraphInnerNodeViewData: Identifiable {
+    var id = UUID()
     var value: String
+
+    init(
+        id: UUID = UUID(),
+        value: String
+    ) {
+        self.id = id
+        self.value = value
+    }
+}
+
+// move to file?
+extension GraphNode {
+    var plainViewData: GraphInnerNodeViewData {
+        .init(value: value)
+    }
 }

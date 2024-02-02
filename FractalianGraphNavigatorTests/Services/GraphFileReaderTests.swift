@@ -12,7 +12,7 @@ import Foundation
 
 final class GraphFileReaderTests: XCTestCase {
 
-    func testReadGraphWithCycles() {
+    func testReadGraphWithCycles() async {
         let bundle = Bundle(for: type(of: self))
 
         guard let temporaryFilePath = bundle.path(forResource: "GraphWithCycles", ofType: "xml") else {
@@ -22,7 +22,7 @@ final class GraphFileReaderTests: XCTestCase {
 
         do {
             let graphFileReader = GraphFileReader()
-            let graph = try graphFileReader.readGraphFromFile(atPath: temporaryFilePath)
+            let graph = try await graphFileReader.readGraphFromFile(atPath: temporaryFilePath)
 
             // Test the structure of the graph
             XCTAssertEqual(graph.nodes.count, 11)
@@ -47,7 +47,7 @@ final class GraphFileReaderTests: XCTestCase {
         }
     }
 
-    func testReadGraphWithoutCycles() {
+    func testReadGraphWithoutCycles() async {
         let bundle = Bundle(for: type(of: self))
 
         guard let temporaryFilePath = bundle.path(forResource: "GraphWithoutCycles", ofType: "xml") else {
@@ -57,7 +57,7 @@ final class GraphFileReaderTests: XCTestCase {
 
         do {
             let graphFileReader = GraphFileReader()
-            let graph = try graphFileReader.readGraphFromFile(atPath: temporaryFilePath)
+            let graph = try await graphFileReader.readGraphFromFile(atPath: temporaryFilePath)
 
             // Test the structure of the graph
             XCTAssertEqual(graph.nodes.count, 11)
@@ -79,7 +79,7 @@ final class GraphFileReaderTests: XCTestCase {
         }
     }
 
-    func testReadGraphCorrupedStructure() {
+    func testReadGraphCorrupedStructure() async {
         let bundle = Bundle(for: type(of: self))
 
         guard let temporaryFilePath = bundle.path(forResource: "GraphCorruptedStructure", ofType: "xml") else {
@@ -89,7 +89,7 @@ final class GraphFileReaderTests: XCTestCase {
 
         do {
             let graphFileReader = GraphFileReader()
-            _ = try graphFileReader.readGraphFromFile(atPath: temporaryFilePath)
+            _ = try await graphFileReader.readGraphFromFile(atPath: temporaryFilePath)
             XCTFail("Expected an error but the operation succeeded")
         } catch let error as GraphReaderError {
             XCTAssertTrue(error == GraphReaderError.structuralError)
@@ -98,7 +98,7 @@ final class GraphFileReaderTests: XCTestCase {
         }
     }
 
-    func testReadGraphCorrupedXML() {
+    func testReadGraphCorrupedXML() async {
         let bundle = Bundle(for: type(of: self))
 
         guard let temporaryFilePath = bundle.path(forResource: "GraphCorruptedXML", ofType: "xml") else {
@@ -107,7 +107,13 @@ final class GraphFileReaderTests: XCTestCase {
         }
 
         let graphFileReader = GraphFileReader()
-        XCTAssertThrowsError(try graphFileReader.readGraphFromFile(atPath: temporaryFilePath))
+
+        do {
+            let result = try await graphFileReader.readGraphFromFile(atPath: temporaryFilePath)
+            XCTFail("The test should throw an error, but succeeded with result: \(result)")
+        } catch {
+            XCTAssertNotNil(error)
+        }
     }
 
     private func countEdges(in graph: Graph) -> Int {

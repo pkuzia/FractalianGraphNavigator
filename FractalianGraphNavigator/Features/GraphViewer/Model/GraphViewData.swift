@@ -7,12 +7,14 @@
 
 import Foundation
 
-final class GraphViewData: ObservableObject {
-    @Published var title: String
-    @Published var nodes: [GraphNodeViewData]
+final class GraphViewData {
+    var id: UUID
+    var title: String
+    var nodes: [GraphNodeViewData]
 
-    init(title: String, nodes: [GraphNodeViewData]) {
+    init(id: UUID, title: String, nodes: [GraphNodeViewData]) {
         self.title = title
         self.nodes = nodes
+        self.id = id
     }
 }

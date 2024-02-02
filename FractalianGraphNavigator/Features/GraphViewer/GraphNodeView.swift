@@ -10,8 +10,6 @@ import SwiftUI
 struct GraphNodeView: View {
     @ObservedObject var viewData: GraphNodeViewData
 
-    var loadNextItems: (() -> Void)
-
     var body: some View {
         VStack {
             VStack(alignment: .leading, spacing: Spacing.small) {
@@ -24,7 +22,7 @@ struct GraphNodeView: View {
 
                 ListView(
                     nodes: $viewData.nodes,
-                    loadNextItems: loadNextItems
+                    id: $viewData.id
                 )
 
                 Spacer()
@@ -41,9 +39,9 @@ struct GraphNodeView: View {
 }
 
 private struct ListView: View {
+    @EnvironmentObject private var graphManager: GraphManager
     @Binding var nodes: [GraphInnerNodeViewData]
-
-    var loadNextItems: (() -> Void)
+    @Binding var id: UUID
 
     var body: some View {
         ScrollView(.horizontal) {
@@ -56,7 +54,7 @@ private struct ListView: View {
                         )
                         .onAppear {
                             if node.id == nodes.last?.id {
-                                loadNextItems()
+                                graphManager.requestNextInnerPage(for: id)
                             }
                         }
                 }
@@ -70,12 +68,12 @@ private struct ListView: View {
 #Preview {
     GraphNodeView(
         viewData: GraphNodeViewData(
+            id: UUID(),
             title: "n1231",
             nodes: [
                 GraphInnerNodeViewData(value: "n1"),
                 GraphInnerNodeViewData(value: "n2"),
                 GraphInnerNodeViewData(value: "n3")
-            ]),
-        loadNextItems: {}
+            ])
     )
 }
