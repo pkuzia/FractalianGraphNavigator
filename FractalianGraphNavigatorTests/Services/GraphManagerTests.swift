@@ -108,25 +108,28 @@ final class GraphManagerTests: XCTestCase {
     func testChangingFolder() {
         let graph = Graph()
 
-        for index in 0...100 {
-            _ = try? graph.addNode(id: "n\(index)")
-        }
+        _ = try? graph.addNode(id: "n0")
+        _ = try? graph.addNode(id: "n1")
+        _ = try? graph.addNode(id: "n2")
 
-        for index in 1...50 {
-            try? graph.addEdge(fromId: "n0", toId: "n\(index)")
-        }
-
-        for index in 2...34 {
-            try? graph.addEdge(fromId: "n1", toId: "n\(index)")
-        }
+        try? graph.addEdge(fromId: "n0", toId: "n1")
+        try? graph.addEdge(fromId: "n1", toId: "n2")
 
         let graphManager = GraphManager()
         graphManager.graph = graph
 
         let n1Node = graph.nodes.first(where: { $0.key == "n1" })!.value
+        let n2Node = graph.nodes.first(where: { $0.key == "n2" })!.value
+
         XCTAssertTrue(graphManager.activeNode!.title == "n0")
 
         graphManager.selectNewNode(id: n1Node.id)
+        XCTAssertTrue(graphManager.activeNode!.title == "n1")
+
+        graphManager.selectNewNode(id: n2Node.id)
+        XCTAssertTrue(graphManager.activeNode!.title == "n2")
+
+        graphManager.restorePreviousGraphNode()
         XCTAssertTrue(graphManager.activeNode!.title == "n1")
 
         graphManager.restorePreviousGraphNode()

@@ -11,6 +11,7 @@ final class GraphNodeViewData: ObservableObject, Identifiable {
     @Published var id: UUID
     @Published var title: String
     @Published var nodes: [GraphInnerNodeViewData]
+    
 
     init(id: UUID, title: String, nodes: [GraphInnerNodeViewData]) {
         self.title = title

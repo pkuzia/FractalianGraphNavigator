@@ -11,6 +11,8 @@ import UniformTypeIdentifiers
 @MainActor
 struct LoadGraphView: View {
 
+    @Binding var path: NavigationPath
+
     @EnvironmentObject private var graphManager: GraphManager
     @Environment(\.dismiss) private var dismissAction
 
@@ -18,8 +20,6 @@ struct LoadGraphView: View {
     @State private var isLoading: Bool = false
     @State private var isError: Bool = false
     
-    @Binding var path: NavigationPath
-
     var body: some View {
         ZStack {
             Background()

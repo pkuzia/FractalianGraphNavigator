@@ -22,7 +22,7 @@ struct StartViewDestinationHandler: ViewModifier {
                 case .loadGraph:
                     LoadGraphView(path: $path)
                 case .generateGraph:
-                    Text("generateGraph")
+                    GraphGeneratorView(path: $path)
                 }
             }
     }

@@ -36,8 +36,8 @@ struct ContentView1: View {
         .onAppear(perform: {
             let start = CFAbsoluteTimeGetCurrent()
 
-            let x123 = RandomGraphGenerator()
-            let graph = x123.generateGraph(nodes: 10, maxEdgesPerNode: 5)
+//            let x123 = RandomGraphGenerator()
+//            let graph = x123.generateGraph(nodes: 10, maxEdgesPerNode: 5)
 
 //            // Przykład użycia
 //            let vertices = 20000

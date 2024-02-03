@@ -19,6 +19,11 @@
 		0632A5752B659DDE0002EA17 /* GraphFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A5742B659DDE0002EA17 /* GraphFileReader.swift */; };
 		0632A6E62B6676450002EA17 /* GraphWithCycles.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0632A6E52B6676450002EA17 /* GraphWithCycles.xml */; };
 		063D18452B6D8DFE00FA61BA /* GraphEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D18442B6D8DFE00FA61BA /* GraphEmptyView.swift */; };
+		063D18482B6D915600FA61BA /* GraphGeneratorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D18472B6D915600FA61BA /* GraphGeneratorView.swift */; };
+		063D184A2B6D92DD00FA61BA /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D18492B6D92DD00FA61BA /* SegmentedControl.swift */; };
+		063D184D2B6D967600FA61BA /* NumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D184C2B6D967600FA61BA /* NumberTextField.swift */; };
+		063D184F2B6D9BB900FA61BA /* GraphSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D184E2B6D9BB900FA61BA /* GraphSliderView.swift */; };
+		063D18512B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D18502B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift */; };
 		066CCCA92B6C0A0A00724E2C /* GraphManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCA82B6C0A0A00724E2C /* GraphManager .swift */; };
 		066CCCAB2B6C124400724E2C /* LoadGraphDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCAA2B6C124400724E2C /* LoadGraphDestinations.swift */; };
 		066CCCAD2B6C2F5700724E2C /* GraphNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCAC2B6C2F5700724E2C /* GraphNodeView.swift */; };
@@ -44,7 +49,7 @@
 		066D0A902B696100009E60C5 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 066D0A822B696100009E60C5 /* Rubik-SemiBold.ttf */; };
 		066D0A912B696100009E60C5 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 066D0A832B696100009E60C5 /* Rubik-Light.ttf */; };
 		066D0A942B696100009E60C5 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 066D0A862B696100009E60C5 /* Rubik-Regular.ttf */; };
-		066D0A962B6A64D6009E60C5 /* DirectedGraphGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0A952B6A64D6009E60C5 /* DirectedGraphGenerator.swift */; };
+		066D0A962B6A64D6009E60C5 /* AcyclicGraphGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0A952B6A64D6009E60C5 /* AcyclicGraphGenerator.swift */; };
 		066D0C002B6AAAA7009E60C5 /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0BFF2B6AAAA7009E60C5 /* Fonts+Generated.swift */; };
 		066D0C052B6AACB2009E60C5 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C042B6AACB2009E60C5 /* TextStyle.swift */; };
 		066D0C0A2B6AAF59009E60C5 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C092B6AAF59009E60C5 /* StartView.swift */; };
@@ -89,6 +94,11 @@
 		0632A5742B659DDE0002EA17 /* GraphFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphFileReader.swift; sourceTree = "<group>"; };
 		0632A6E52B6676450002EA17 /* GraphWithCycles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GraphWithCycles.xml; sourceTree = "<group>"; };
 		063D18442B6D8DFE00FA61BA /* GraphEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphEmptyView.swift; sourceTree = "<group>"; };
+		063D18472B6D915600FA61BA /* GraphGeneratorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphGeneratorView.swift; sourceTree = "<group>"; };
+		063D18492B6D92DD00FA61BA /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		063D184C2B6D967600FA61BA /* NumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTextField.swift; sourceTree = "<group>"; };
+		063D184E2B6D9BB900FA61BA /* GraphSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSliderView.swift; sourceTree = "<group>"; };
+		063D18502B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphGeneratorViewDestinations.swift; sourceTree = "<group>"; };
 		066CCCA82B6C0A0A00724E2C /* GraphManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphManager .swift"; sourceTree = "<group>"; };
 		066CCCAA2B6C124400724E2C /* LoadGraphDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadGraphDestinations.swift; sourceTree = "<group>"; };
 		066CCCAC2B6C2F5700724E2C /* GraphNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphNodeView.swift; sourceTree = "<group>"; };
@@ -114,7 +124,7 @@
 		066D0A822B696100009E60C5 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
 		066D0A832B696100009E60C5 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
 		066D0A862B696100009E60C5 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
-		066D0A952B6A64D6009E60C5 /* DirectedGraphGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectedGraphGenerator.swift; sourceTree = "<group>"; };
+		066D0A952B6A64D6009E60C5 /* AcyclicGraphGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcyclicGraphGenerator.swift; sourceTree = "<group>"; };
 		066D0BFF2B6AAAA7009E60C5 /* Fonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
 		066D0C012B6AAB5F009E60C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		066D0C042B6AACB2009E60C5 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
@@ -211,7 +221,7 @@
 				066CCCA82B6C0A0A00724E2C /* GraphManager .swift */,
 				0632A5742B659DDE0002EA17 /* GraphFileReader.swift */,
 				066D07782B66808A009E60C5 /* RandomGraphGenerator.swift */,
-				066D0A952B6A64D6009E60C5 /* DirectedGraphGenerator.swift */,
+				066D0A952B6A64D6009E60C5 /* AcyclicGraphGenerator.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -219,6 +229,7 @@
 		0632A56B2B6597BC0002EA17 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				063D18462B6D914D00FA61BA /* GraphGenerator */,
 				06E15C8F2B6AE4A1008D768F /* GraphViewer */,
 				06E15C8E2B6AE498008D768F /* LoadGraph */,
 				066D0C062B6AAF24009E60C5 /* Start */,
@@ -286,6 +297,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		063D18462B6D914D00FA61BA /* GraphGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				063D18472B6D915600FA61BA /* GraphGeneratorView.swift */,
+				063D18502B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift */,
+			);
+			path = GraphGenerator;
+			sourceTree = "<group>";
+		};
+		063D184B2B6D966C00FA61BA /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				063D184C2B6D967600FA61BA /* NumberTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
 		066CCCB22B6C36AC00724E2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +336,7 @@
 		066D077F2B694220009E60C5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				063D184B2B6D966C00FA61BA /* TextField */,
 				066D0C142B6ABFA8009E60C5 /* Views */,
 				066D0C0D2B6AB033009E60C5 /* Buttons */,
 				066D07802B69422B009E60C5 /* Styles */,
@@ -354,6 +383,8 @@
 				066D0C102B6AB06F009E60C5 /* PrimaryButton.swift */,
 				066D0C122B6AB56D009E60C5 /* SecondaryButton.swift */,
 				06E15C942B6AEB2B008D768F /* BackButton.swift */,
+				063D18492B6D92DD00FA61BA /* SegmentedControl.swift */,
+				063D184E2B6D9BB900FA61BA /* GraphSliderView.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -656,8 +687,10 @@
 				066CCCB12B6C362B00724E2C /* GraphInnerNodeViewData.swift in Sources */,
 				066D0C0C2B6AAF8A009E60C5 /* View+Style.swift in Sources */,
 				066D0C132B6AB56D009E60C5 /* SecondaryButton.swift in Sources */,
+				063D184A2B6D92DD00FA61BA /* SegmentedControl.swift in Sources */,
 				06E15C8D2B6AE451008D768F /* StartViewDestinations.swift in Sources */,
 				066CCCAB2B6C124400724E2C /* LoadGraphDestinations.swift in Sources */,
+				063D184F2B6D9BB900FA61BA /* GraphSliderView.swift in Sources */,
 				066D078A2B69460C009E60C5 /* String+Extension.swift in Sources */,
 				06E15C932B6AE82D008D768F /* LoadGraphView.swift in Sources */,
 				06E15C982B6AED81008D768F /* BackButtonModifier.swift in Sources */,
@@ -667,8 +700,10 @@
 				06E15E042B6AEE6B008D768F /* LoadingView.swift in Sources */,
 				0632A56F2B6598950002EA17 /* Graph.swift in Sources */,
 				06E15E022B6AEE20008D768F /* BaseView.swift in Sources */,
+				063D184D2B6D967600FA61BA /* NumberTextField.swift in Sources */,
 				066D0C052B6AACB2009E60C5 /* TextStyle.swift in Sources */,
-				066D0A962B6A64D6009E60C5 /* DirectedGraphGenerator.swift in Sources */,
+				063D18512B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift in Sources */,
+				066D0A962B6A64D6009E60C5 /* AcyclicGraphGenerator.swift in Sources */,
 				0632A5432B65975B0002EA17 /* ContentView.swift in Sources */,
 				0632A5712B6598B10002EA17 /* GraphNode.swift in Sources */,
 				066CCCA92B6C0A0A00724E2C /* GraphManager .swift in Sources */,
@@ -680,6 +715,7 @@
 				06E15C952B6AEB2B008D768F /* BackButton.swift in Sources */,
 				06E15C912B6AE4B1008D768F /* GraphViewer.swift in Sources */,
 				066D078F2B694693009E60C5 /* Constants.swift in Sources */,
+				063D18482B6D915600FA61BA /* GraphGeneratorView.swift in Sources */,
 				066D0C112B6AB06F009E60C5 /* PrimaryButton.swift in Sources */,
 				063D18452B6D8DFE00FA61BA /* GraphEmptyView.swift in Sources */,
 				060374792B6D7DEA00C96778 /* PaginationData.swift in Sources */,
