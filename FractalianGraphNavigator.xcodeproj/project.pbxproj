@@ -24,6 +24,7 @@
 		063D184D2B6D967600FA61BA /* NumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D184C2B6D967600FA61BA /* NumberTextField.swift */; };
 		063D184F2B6D9BB900FA61BA /* GraphSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D184E2B6D9BB900FA61BA /* GraphSliderView.swift */; };
 		063D18512B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D18502B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift */; };
+		063D18532B6E8C6F00FA61BA /* AcyclicGraphGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D18522B6E8C6F00FA61BA /* AcyclicGraphGeneratorTests.swift */; };
 		066CCCA92B6C0A0A00724E2C /* GraphManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCA82B6C0A0A00724E2C /* GraphManager .swift */; };
 		066CCCAB2B6C124400724E2C /* LoadGraphDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCAA2B6C124400724E2C /* LoadGraphDestinations.swift */; };
 		066CCCAD2B6C2F5700724E2C /* GraphNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCAC2B6C2F5700724E2C /* GraphNodeView.swift */; };
@@ -99,6 +100,7 @@
 		063D184C2B6D967600FA61BA /* NumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTextField.swift; sourceTree = "<group>"; };
 		063D184E2B6D9BB900FA61BA /* GraphSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSliderView.swift; sourceTree = "<group>"; };
 		063D18502B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphGeneratorViewDestinations.swift; sourceTree = "<group>"; };
+		063D18522B6E8C6F00FA61BA /* AcyclicGraphGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcyclicGraphGeneratorTests.swift; sourceTree = "<group>"; };
 		066CCCA82B6C0A0A00724E2C /* GraphManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphManager .swift"; sourceTree = "<group>"; };
 		066CCCAA2B6C124400724E2C /* LoadGraphDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadGraphDestinations.swift; sourceTree = "<group>"; };
 		066CCCAC2B6C2F5700724E2C /* GraphNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphNodeView.swift; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 				066CCCB72B6CD09400724E2C /* GraphFileReaderTests.swift */,
 				066D077A2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift */,
 				066CCCB92B6CD0A500724E2C /* GraphManagerTests.swift */,
+				063D18522B6E8C6F00FA61BA /* AcyclicGraphGeneratorTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -733,6 +736,7 @@
 				066CCCBA2B6CD0A500724E2C /* GraphManagerTests.swift in Sources */,
 				066CCCB82B6CD09400724E2C /* GraphFileReaderTests.swift in Sources */,
 				0632A5522B65975C0002EA17 /* FractalianGraphNavigatorTests.swift in Sources */,
+				063D18532B6E8C6F00FA61BA /* AcyclicGraphGeneratorTests.swift in Sources */,
 				066D077B2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

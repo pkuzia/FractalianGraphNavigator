@@ -46,10 +46,7 @@ private class GraphMLParser: NSObject {
                 if let error = error {
                     continuation.resume(throwing: error)
                 } else {
-//                    Task {
-//                        try await Task.sleep(nanoseconds: 2 * 1_000_000_000) // Opóźnienie o 2 sekundy
-                        continuation.resume(returning: graph)
-//                    }
+                    continuation.resume(returning: graph)
                 }
             } else {
                 continuation.resume(throwing: GraphReaderError.pathError)

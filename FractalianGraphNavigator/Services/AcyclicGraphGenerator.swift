@@ -1,3 +1,5 @@
+// swiftlint:disable all
+
 //
 //  AcyclicGraphGenerator.swift
 //  FractalianGraphNavigator
@@ -8,15 +10,15 @@
 import Foundation
 
 /**
- Asynchronously generates a Directed Acyclic Graph (DAG) with the specified width and height, introducing edges based on a given probability. 
+ Asynchronously generates a Directed Acyclic Graph (DAG) with the specified width and height, introducing edges based on a given probability.
  The function creates nodes in rows, connecting each node from the current row to nodes in the next row with a probability defined by the parameter.
 
  - Parameters:
-   - width: The number of nodes in each row.
-   - height: The number of rows in the graph.
-   - probability: The probability (percentage) of creating an edge between nodes in consecutive rows. Defaults to 10.
+ - width: The number of nodes in each row.
+ - height: The number of rows in the graph.
+ - probability: The probability (percentage) of creating an edge between nodes in consecutive rows. Defaults to 10.
 
- - Returns: A Directed Acyclic Graph (DAG) with the specified width, height, and edge probability.
+ - Returns: A Directed Acyclic YGraph (DAG) with the specified width, height, and edge probability.
  */
 
 class AcyclicGraphGenerator {
@@ -27,6 +29,7 @@ class AcyclicGraphGenerator {
 
             var nodes = Int.zero
 
+//            print("digraph {")
             for _ in .zero..<height {
                 let newNodes = width
 
@@ -34,7 +37,8 @@ class AcyclicGraphGenerator {
                     for innerIndex in .zero..<newNodes {
                         if randomPercent() < probability,
                            let sourceNode = graph.fetchOrCreateNode(id: outerIndex),
-                           let targetNode = graph.fetchOrCreateNode(id: innerIndex) {
+                           let targetNode = graph.fetchOrCreateNode(id: innerIndex + nodes) {
+//                            print("  \(outerIndex) -> \(innerIndex + nodes);")
                             try? graph.addEdge(from: sourceNode, to: targetNode)
                         }
                     }
