@@ -30,6 +30,8 @@ struct GraphGeneratorView: View {
     @State private var numberOfNodes: String = .empty
     @State private var maxEdges: String = .empty
 
+    @State private var activeTask: Task<(), Never>?
+
     var body: some View {
         ZStack {
             Background()
@@ -70,6 +72,7 @@ struct GraphGeneratorView: View {
         )
         .modifier(
             BackButtonModifier(dismissAction: {
+                activeTask?.cancel()
                 dismissAction()
             })
         )
@@ -97,16 +100,17 @@ struct GraphGeneratorView: View {
 
         let generator = RandomGraphGenerator()
 
-        Task(priority: .userInitiated) {
-            isLoading = true
-
-            graphManager.graph = await generator.generateGraph(
-                nodes: numberOfNodes,
-                maxEdgesPerNode: maxEdges
-            )
-
-            isLoading = false
-            path.append(GraphGeneratorViewDestinations.graphViewer)
+        activeTask = Task(priority: .userInitiated) {
+            do {
+                isLoading = true
+                graphManager.graph = try await generator.generateGraph(
+                    nodes: numberOfNodes,
+                    maxEdgesPerNode: maxEdges
+                )
+                handleGenerationSuccess()
+            } catch {
+                handleGenerationErrors(error)
+            }
         }
     }
 
@@ -117,18 +121,31 @@ struct GraphGeneratorView: View {
 
         let generator = AcyclicGraphGenerator()
         
-        Task(priority: .userInitiated) {
-            isLoading = true
-
-            graphManager.graph = await generator.generateDAG(
-                width: width,
-                height: height,
-                probability: Int(probability)
-            )
-
-            isLoading = false
-            path.append(GraphGeneratorViewDestinations.graphViewer)
+        activeTask = Task(priority: .userInitiated) {
+            do {
+                isLoading = true
+                graphManager.graph = try await generator.generateDAG(
+                    width: width,
+                    height: height,
+                    probability: Int(probability)
+                )
+                handleGenerationSuccess()
+            } catch {
+                handleGenerationErrors(error)
+            }
         }
+    }
+
+    private func handleGenerationSuccess() {
+        isLoading = false
+        path.append(GraphGeneratorViewDestinations.graphViewer)
+    }
+
+    private func handleGenerationErrors(_ error: Error) {
+        if !(error is CancellationError) {
+            isError = true
+        }
+        isLoading = false
     }
 }
 

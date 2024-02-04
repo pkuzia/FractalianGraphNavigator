@@ -21,8 +21,8 @@ import Foundation
 
 class RandomGraphGenerator {
 
-    func generateGraph(nodes: Int, maxEdgesPerNode: Int) async -> Graph {
-        return await withCheckedContinuation { continuation in
+    func generateGraph(nodes: Int, maxEdgesPerNode: Int) async throws -> Graph {
+        return try await withCheckedThrowingContinuation { continuation in
             let graph = Graph()
 
             for node in .zero..<nodes {
@@ -34,8 +34,14 @@ class RandomGraphGenerator {
                 }
 
                 while edgesAdded < maxEdges {
-                    let randomVertex = Int.random(in: 0..<nodes)
+                    do {
+                        try Task.checkCancellation()
+                    } catch {
+                        continuation.resume(throwing: CancellationError())
+                        return
+                    }
 
+                    let randomVertex = Int.random(in: 0..<nodes)
                     if let targetNode = graph.fetchOrCreateNode(id: randomVertex) {
                         if targetNode.neighbors.count < maxEdges {
                             try? graph.addEdge(from: sourceNode, to: targetNode)

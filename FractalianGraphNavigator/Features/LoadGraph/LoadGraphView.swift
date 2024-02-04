@@ -19,7 +19,8 @@ struct LoadGraphView: View {
     @State private var isFilePickerPresented = false
     @State private var isLoading: Bool = false
     @State private var isError: Bool = false
-    
+    @State private var activeTask: Task<(), Never>?
+
     var body: some View {
         ZStack {
             Background()
@@ -84,7 +85,7 @@ extension LoadGraphView {
     private func handleFileSelection(result: Result<URL, Error>) {
         switch result {
         case .success(let selectedURL):
-            Task(priority: .userInitiated) {
+            activeTask = Task(priority: .userInitiated) {
                 isLoading = true
                 do {
                     graphManager.graph = try await GraphFileReader().readGraphFromFile(

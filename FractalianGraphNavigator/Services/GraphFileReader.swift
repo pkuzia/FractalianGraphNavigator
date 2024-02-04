@@ -104,6 +104,12 @@ extension GraphMLParser: XMLParserDelegate {
         qualifiedName qName: String?,
         attributes attributeDict: [String: String] = [:]
     ) {
+        do {
+            try Task.checkCancellation()
+        } catch {
+            parser.abortParsing()
+        }
+
         switch elementName {
         case GraphMLKeys.node:
             if let id = attributeDict[GraphMLKeys.id] {

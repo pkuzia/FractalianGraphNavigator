@@ -21,8 +21,8 @@ import Foundation
 
 class AcyclicGraphGenerator {
 
-    func generateDAG(width: Int, height: Int, probability: Int = 10) async -> Graph {
-        return await withCheckedContinuation { continuation in
+    func generateDAG(width: Int, height: Int, probability: Int = 10) async throws -> Graph {
+        return try await withCheckedThrowingContinuation { continuation in
             let graph = Graph()
 
             var nodes = Int.zero
@@ -32,6 +32,13 @@ class AcyclicGraphGenerator {
 
                 for outerIndex in .zero..<nodes {
                     for innerIndex in .zero..<newNodes {
+                        do {
+                            try Task.checkCancellation()
+                        } catch {
+                            continuation.resume(throwing: CancellationError())
+                            return
+                        }
+
                         if randomPercent() < probability,
                            let sourceNode = graph.fetchOrCreateNode(id: outerIndex),
                            let targetNode = graph.fetchOrCreateNode(id: innerIndex + nodes) {
