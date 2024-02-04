@@ -1,18 +1,10 @@
 ![](READMEAssets/logo.png)
 
-[WIP] An application created as part of the master's thesis analyzing user driving style, using data from the OBD II interface and Machine Learing Core. 
-Driving Behaviour Analyzer consists of two parts:
+## Fractalian Graph Navigator
 
-### Collecting data
+The Fractalian Graph Navigator is a versatile Swift UI application designed for graphical exploration of large input graphs provided in GraphML format. This application offers an interactive and fractal-like experience, where each graph node is visually represented as a rectangle in the app's UI. Users can seamlessly navigate through the graph structure by clicking or tapping on these rectangles, revealing further rectangles that represent the directly reachable nodes from the parent node. The application, developed using SwiftUI, is compatible with both macOS and iOS/iPadOS platforms, ensuring a consistent and user-friendly experience across devices. 
 
-Part of the application that collects and analyzes data from ODB II interface while driving a car.
-The analyzed data are generated into the CSV file and used to trained the machine learning model in XGBoost library.
-
-### Driving Behaviour Analyzer
-
-Part of the application for the user whose driving style will be analyzed. Data from OBD II interface 
-on the test route are processed and saved in Realm database. Using the trained model and ML Core application
-determines what type of drive is user.
+It handles input graphs with tens of thousands of nodes, including those with cycles, and provides a customizable user interface for an engaging exploration of complex graph relationships. Additionally, a app provides tool for generating interesting graphs, allowing users to dive into a diverse range of graph structures.
 
 ## Build and Runtime Requirements
 + Xcode 15.1
