@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/pkuzia/FractalianGraphNavigator">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="READMEAssets/logo.png" alt="Logo" width="140" height="140">
   </a>
 
 <h3 align="center">Fractalian Graph Navigator</h3>
@@ -13,7 +13,6 @@
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
@@ -23,9 +22,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 * Xcode
 * XcodeGen
 * SwiftLint
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## Getting Started
 
@@ -56,8 +52,6 @@ This is an example of how to list things you need to use the software and how to
    const API_KEY = 'ENTER YOUR API';
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
@@ -67,7 +61,5 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: READMEAssets/screenshots.png
