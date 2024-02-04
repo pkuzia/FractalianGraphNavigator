@@ -1,0 +1,58 @@
+// swiftlint:disable all
+// Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
+
+{% if tables.count > 0 %}
+{% set accessModifier %}{% if param.publicAccess %}public{% else %}internal{% endif %}{% endset %}
+import Foundation
+
+// swiftlint:disable superfluous_disable_command
+// swiftlint:disable file_length
+
+{% macro parametersBlock types %}{% filter removeNewlines:"leading" %}
+  {% for type in types %}
+    _ p{{forloop.counter}}: {{type}}{{ ", " if not forloop.last }}
+  {% endfor %}
+{% endfilter %}{% endmacro %}
+{% macro argumentsBlock types %}{% filter removeNewlines:"leading" %}
+  {% for type in types %}
+    {% if type == "UnsafeRawPointer" %}
+    Int(bitPattern: p{{forloop.counter}})
+    {% else %}
+    p{{forloop.counter}}
+    {% endif %}
+    {{ ", " if not forloop.last }}
+  {% endfor %}
+{% endfilter %}{% endmacro %}
+{% macro recursiveBlock table item %}
+  {% for string in item.strings %}
+
+    {% if not param.noComments %}
+    /// {{string.translation}}
+    {% endif %}
+    {% if string.types %}
+    static func {{string.key|swiftIdentifier|escapeReservedKeywords|camelToSnakeCase}}({% call parametersBlock string.types %}) -> String {
+      return String(format: "{{string.key}}".localized, {% call argumentsBlock string.types %})
+    }
+    {% else %}
+    static var {{string.key|swiftIdentifier|escapeReservedKeywords|snakeToCamelCase|lowerFirstLetter}}: String {
+      return "{{string.key}}".localized
+    }
+    {% endif %}
+  {% endfor %}
+  {% for child in item.children %}
+  {% call recursiveBlock table child %}
+  {% endfor %}
+{% endmacro %}
+// swiftlint:disable function_parameter_count identifier_name line_length type_body_length
+
+{{accessModifier}} extension String {
+  {% for table in tables %}
+    {% call recursiveBlock table.name table.levels %}
+    {% endfor %}
+}
+// swiftlint:enable function_parameter_count identifier_name line_length type_body_length
+
+{% else %}
+  // No string found
+{% endif %}
+// swiftlint:enable all

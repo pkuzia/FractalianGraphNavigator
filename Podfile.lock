@@ -1,0 +1,56 @@
+PODS:
+  - SwifterSwift (6.0.0):
+    - SwifterSwift/AppKit (= 6.0.0)
+    - SwifterSwift/Combine (= 6.0.0)
+    - SwifterSwift/CoreAnimation (= 6.0.0)
+    - SwifterSwift/CoreGraphics (= 6.0.0)
+    - SwifterSwift/CoreLocation (= 6.0.0)
+    - SwifterSwift/CryptoKit (= 6.0.0)
+    - SwifterSwift/Dispatch (= 6.0.0)
+    - SwifterSwift/Foundation (= 6.0.0)
+    - SwifterSwift/HealthKit (= 6.0.0)
+    - SwifterSwift/MapKit (= 6.0.0)
+    - SwifterSwift/SceneKit (= 6.0.0)
+    - SwifterSwift/SpriteKit (= 6.0.0)
+    - SwifterSwift/StoreKit (= 6.0.0)
+    - SwifterSwift/SwiftStdlib (= 6.0.0)
+    - SwifterSwift/UIKit (= 6.0.0)
+    - SwifterSwift/WebKit (= 6.0.0)
+  - SwifterSwift/AppKit (6.0.0)
+  - SwifterSwift/Combine (6.0.0)
+  - SwifterSwift/CoreAnimation (6.0.0)
+  - SwifterSwift/CoreGraphics (6.0.0)
+  - SwifterSwift/CoreLocation (6.0.0)
+  - SwifterSwift/CryptoKit (6.0.0)
+  - SwifterSwift/Dispatch (6.0.0)
+  - SwifterSwift/Foundation (6.0.0)
+  - SwifterSwift/HealthKit (6.0.0)
+  - SwifterSwift/MapKit (6.0.0)
+  - SwifterSwift/SceneKit (6.0.0)
+  - SwifterSwift/SpriteKit (6.0.0)
+  - SwifterSwift/StoreKit (6.0.0)
+  - SwifterSwift/SwiftStdlib (6.0.0)
+  - SwifterSwift/UIKit (6.0.0)
+  - SwifterSwift/WebKit (6.0.0)
+  - SwiftGen (6.6.2)
+  - SwiftLint (0.54.0)
+
+DEPENDENCIES:
+  - SwifterSwift
+  - SwiftGen (~> 6.0)
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - SwifterSwift
+    - SwiftGen
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  SwifterSwift: 66843dc594f8fb890f5543c22545921d44acc004
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
+  SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
+
+PODFILE CHECKSUM: c8e7e14a7a7a97f82e94595040e6e5c196a247c7
+
+COCOAPODS: 1.14.2

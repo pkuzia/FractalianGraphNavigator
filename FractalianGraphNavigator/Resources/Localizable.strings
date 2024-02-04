@@ -1,0 +1,39 @@
+/* 
+  Localizable.strings
+  FractalianGraphNavigator
+
+  Created by Przemysław Kuzia on 30/01/2024.
+  
+*/
+
+"common_error_title" = "Error";
+"common_error_message" = "Something went wrong.";
+"common_error_ok" = "OK";
+
+"start_screen_title" = "Explore graphs";
+"start_screen_subtitle" = "Empower your data journey with seamless graph creation and exploration. Discover the potential of visualization.";
+"start_screen_buttons_generate" = "Generate graph";
+"start_screen_buttons_load" = "Load graph";
+
+"load_graph_nav_bar_title" = "Load graph";
+"load_graph_title" = "Load Your Graph";
+"load_graph_subtitle" = "Get ready to dive into your data adventure! Select a file and embark on a journey of insights. It's just a click away – load your graph now and let the exploration begin.";
+
+"graph_viewer_nav_bar_title" = "Graph viewer";
+"graph_viewer_buttons_previous" = "Previous folder";
+"graph_viewer_empty_folder" = "This folder is empty.";
+
+"graph_generator_nav_bar_title" = "Graph generator";
+"graph_generator_buttons_generate" = "Generate";
+"graph_generator_segemented_with_cycles" = "With cycles";
+"graph_generator_segemented_without_cycles" = "Without cycles";
+"graph_generator_segemented_title" = "Graph type";
+"graph_generator_acyclic_width" = "Graph width";
+"graph_generator_acyclic_width_placeholder" = "Enter graph width";
+"graph_generator_acyclic_height" = "Graph height";
+"graph_generator_acyclic_height_placeholder" = "Enter graph height";
+"graph_generator_acyclic_prob" = "Edge creation probablity";
+"graph_generator_random_nodes" = "Number of nodes";
+"graph_generator_random_nodes_placeholder" = "Enter number of nodes";
+"graph_generator_random_edges" = "Max number of edges per node";
+"graph_generator_random_edges_placeholder" = "Enter max number of edges per node";
