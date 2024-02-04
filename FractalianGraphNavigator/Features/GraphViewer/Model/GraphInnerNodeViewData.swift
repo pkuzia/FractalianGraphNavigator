@@ -19,10 +19,3 @@ class GraphInnerNodeViewData: Identifiable {
         self.value = value
     }
 }
-
-// move to file?
-extension GraphNode {
-    var plainViewData: GraphInnerNodeViewData {
-        .init(value: value)
-    }
-}

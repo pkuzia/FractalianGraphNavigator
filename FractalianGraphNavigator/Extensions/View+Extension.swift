@@ -13,4 +13,12 @@ extension View {
             .font(SwiftUI.Font(style.font))
             .lineSpacing(style.lineSpacing)
     }
+
+    func addShadow() -> some View {
+        self
+            .shadow(
+                color: .backgroundShadow,
+                radius: 8.0
+            )
+    }
 }

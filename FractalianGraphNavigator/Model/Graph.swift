@@ -7,12 +7,15 @@
 
 import Foundation
 
+private enum Constants {
+    static let nodeKeyFormat: String = "n%d"
+}
+
 enum GraphReaderError: Error {
     case pathError
     case structuralError
 }
 
-// DOKOŃCZYĆ TESTY
 final class Graph {
     var nodes: [String: GraphNode] = [:]
 
@@ -40,10 +43,11 @@ final class Graph {
         sourceNode.neighbors.append(destinationNode)
     }
 
-    // Create index as param?
     @discardableResult
-    func fetchOrCreateNode<T>(id: T) -> GraphNode? {
-        let key = "n\(id)"
+    func fetchOrCreateNode(id: Int) -> GraphNode? {
+        let key = String.localizedStringWithFormat(
+            Constants.nodeKeyFormat, id
+        )
 
         if let node = nodes[key] {
             return node

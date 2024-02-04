@@ -18,7 +18,7 @@ import Foundation
  - height: The number of rows in the graph.
  - probability: The probability (percentage) of creating an edge between nodes in consecutive rows. Defaults to 10.
 
- - Returns: A Directed Acyclic YGraph (DAG) with the specified width, height, and edge probability.
+ - Returns: A Directed Acyclic Graph (DAG) with the specified width, height, and edge probability.
  */
 
 class AcyclicGraphGenerator {

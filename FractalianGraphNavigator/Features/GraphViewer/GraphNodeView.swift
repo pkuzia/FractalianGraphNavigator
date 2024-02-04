@@ -23,7 +23,10 @@ struct GraphNodeView: View {
                 if !viewData.nodes.isEmpty {
                     ListView(
                         nodes: $viewData.nodes,
-                        id: $viewData.id
+                        id: $viewData.id,
+                        //
+                        nodeID: $viewData.title
+
                     )
                 } else {
                     GraphEmptyView()
@@ -50,15 +53,15 @@ private struct ListView: View {
     @Binding var nodes: [GraphInnerNodeViewData]
     @Binding var id: UUID
 
+    // Test
+    @Binding var nodeID: String
+
     var body: some View {
         ScrollView(.horizontal) {
             LazyHStack(spacing: Spacing.base) {
                 ForEach($nodes, id: \.id) { node in
                     GraphNodeInnerView(value: node.value)
-                        .shadow(
-                            color: .backgroundShadow,
-                            radius: 8.0
-                        )
+                        .addShadow()
                         .onAppear {
                             if node.id == nodes.last?.id {
                                 graphManager.requestNextInnerPage(for: id)
@@ -71,8 +74,6 @@ private struct ListView: View {
         .scrollIndicators(.hidden)
     }
 }
-
-
 
 #Preview {
     VStack {

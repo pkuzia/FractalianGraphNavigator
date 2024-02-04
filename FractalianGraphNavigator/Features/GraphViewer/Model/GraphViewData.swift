@@ -12,7 +12,11 @@ final class GraphViewData {
     var title: String
     var nodes: [GraphNodeViewData]
 
-    init(id: UUID, title: String, nodes: [GraphNodeViewData]) {
+    init(
+        id: UUID,
+        title: String,
+        nodes: [GraphNodeViewData]
+    ) {
         self.title = title
         self.nodes = nodes
         self.id = id

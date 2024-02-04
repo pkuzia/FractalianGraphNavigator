@@ -8,10 +8,14 @@
 import Foundation
 import Combine
 
+/**
+ GraphManager is responsible for handling graph-related operations and maintaining the state for presentation in the user interface.
+ It manages the current state of the displayed graph, handles pagination, and keeps track of the navigation history within the graph.
+ */
+
 private enum Constants {
     static let firstPage: Int = 1
     static let elementsPerPage: Int = 10
-
     static let n0Index: String = "n0"
 }
 
@@ -68,12 +72,14 @@ final class GraphManager: ObservableObject {
 
         if let node = graph?.nodes.first(where: { $0.value.id == id })?.value {
             setActiveNode(node)
+            resetPagination()
         }
     }
 
     func restorePreviousGraphNode() {
         if let previousGrapNode = graphHistory.popLast() {
             setActiveNode(previousGrapNode)
+            resetPagination()
         }
     }
 
@@ -123,6 +129,8 @@ final class GraphManager: ObservableObject {
         guard let graph = graph else { return }
 
         activeNodePage = Constants.firstPage
+        activeNodesPages.removeAll()
+
         for node in graph.nodes {
             activeNodesPages[node.value.id] = Constants.firstPage
         }

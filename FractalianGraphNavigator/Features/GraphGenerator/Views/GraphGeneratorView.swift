@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-private enum GraphType: Int {
+enum GraphType: Int {
     case withCycles, withoutCycles
 }
 
@@ -36,7 +36,7 @@ struct GraphGeneratorView: View {
             VStack(spacing: Spacing.large) {
                 Spacer(minLength: Spacing.regular)
 
-                FormView(
+                GraphGeneratorFormView(
                     selectedOption: $selectedOption,
                     width: $width,
                     height: $height,
@@ -51,7 +51,12 @@ struct GraphGeneratorView: View {
                         generateGraph()
                     }
                 )
-                .padding(.horizontal, Spacing.regular)
+                .padding(
+                    EdgeInsets(top: .zero,
+                               leading: Spacing.regular,
+                               bottom: Spacing.large,
+                               trailing: Spacing.regular)
+                )
             }
             .padding(.horizontal, Spacing.base)
         }
@@ -123,107 +128,6 @@ struct GraphGeneratorView: View {
 
             isLoading = false
             path.append(GraphGeneratorViewDestinations.graphViewer)
-        }
-    }
-}
-
-private struct FormView: View {
-    @Binding var selectedOption: Int
-
-    @Binding var width: String
-    @Binding var height: String
-    @Binding var probability: Double
-
-    @Binding var numberOfNodes: String
-    @Binding var maxEdges: String
-
-    var body: some View {
-        VStack(spacing: Spacing.zero) {
-            SegmentedControl(
-                selectedSegment: $selectedOption,
-                title: .graphGeneratorSegementedTitle,
-                optionLeft: .graphGeneratorSegementedWithCycles,
-                optionRight: .graphGeneratorSegementedWithoutCycles
-            )
-            .padding(.vertical, Spacing.regular)
-
-            switch GraphType(rawValue: selectedOption) {
-            case .withCycles:
-                CyclicGraphForm(
-                    numberOfNodes: $numberOfNodes,
-                    maxEdges: $maxEdges
-                )
-            case .withoutCycles:
-                AcyclicGraphForm(
-                    width: $width,
-                    height: $height,
-                    probability: $probability
-                )
-            default:
-                EmptyView()
-            }
-
-            Spacer()
-        }
-        .padding(.vertical, Spacing.small)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background {
-            Color.primaryWhite
-        }
-        .cornerRadius(CornerRadius.regular)
-        .shadow(
-            color: .backgroundShadow,
-            radius: 8.0
-        )
-    }
-}
-
-private struct AcyclicGraphForm: View {
-
-    @Binding var width: String
-    @Binding var height: String
-    @Binding var probability: Double
-
-    var body: some View {
-        VStack(spacing: Spacing.regular) {
-            NumberTextField(
-                text: $width,
-                title: .graphGeneratorAcyclicWidth,
-                placeholder: .graphGeneratorAcyclicWidthPlaceholder
-            )
-
-            NumberTextField(
-                text: $height,
-                title: .graphGeneratorAcyclicHeight,
-                placeholder: .graphGeneratorAcyclicHeightPlaceholder
-            )
-
-            GraphSliderView(
-                sliderValue: $probability,
-                title: .graphGeneratorAcyclicProb
-            )
-        }
-    }
-}
-
-private struct CyclicGraphForm: View {
-
-    @Binding var numberOfNodes: String
-    @Binding var maxEdges: String
-
-    var body: some View {
-        VStack(spacing: Spacing.regular) {
-            NumberTextField(
-                text: $numberOfNodes,
-                title: .graphGeneratorRandomNodes,
-                placeholder: .graphGeneratorRandomNodesPlaceholder
-            )
-
-            NumberTextField(
-                text: $maxEdges,
-                title: .graphGeneratorRandomEdges,
-                placeholder: .graphGeneratorRandomEdgesPlaceholder
-            )
         }
     }
 }

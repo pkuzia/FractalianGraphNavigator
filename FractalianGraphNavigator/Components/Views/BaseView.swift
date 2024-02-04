@@ -24,8 +24,6 @@ public struct BaseView<Content: View>: View {
         self.content = content
     }
 
-    // MARK: - View
-
     public var body: some View {
         ZStack {
             content()

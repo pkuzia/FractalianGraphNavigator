@@ -14,7 +14,7 @@ struct BackButtonModifier: ViewModifier {
         content
             .navigationBarBackButtonHidden(true)
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
+                ToolbarItem(placement: .cancellationAction) {
                     BackButton {
                         dismissAction()
                     }

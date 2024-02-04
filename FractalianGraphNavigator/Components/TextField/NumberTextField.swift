@@ -43,7 +43,7 @@ struct NumberTextField: View {
 
 #Preview {
     NumberTextField(
-        text: .constant(""),
+        text: .constant(.empty),
         title: "Title",
         placeholder: "Enter numbers"
     )

@@ -15,6 +15,12 @@ private enum GraphMLKeys {
     static let target = "target"
 }
 
+/**
+A class responsible for reading GraphML files, representing a graph, and creating a Graph structure in memory.
+The class utilizes InputStream to dynamically build the graph, allowing the loading of large XML files without the need to load the entire file into memory.
+The loading process is asynchronous to ensure responsiveness during file parsing.
+ */
+
 final class GraphFileReader {
 
     func readGraphFromFile(atPath path: String) async throws -> Graph {

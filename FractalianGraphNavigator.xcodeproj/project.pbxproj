@@ -10,10 +10,8 @@
 		060374792B6D7DEA00C96778 /* PaginationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060374782B6D7DEA00C96778 /* PaginationData.swift */; };
 		0603747B2B6D86E500C96778 /* NavBarTitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0603747A2B6D86E500C96778 /* NavBarTitleModifier.swift */; };
 		0632A5412B65975B0002EA17 /* FractalianGraphNavigatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A5402B65975B0002EA17 /* FractalianGraphNavigatorApp.swift */; };
-		0632A5432B65975B0002EA17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A5422B65975B0002EA17 /* ContentView.swift */; };
 		0632A5452B65975C0002EA17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0632A5442B65975C0002EA17 /* Assets.xcassets */; };
 		0632A5482B65975C0002EA17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0632A5472B65975C0002EA17 /* Preview Assets.xcassets */; };
-		0632A5522B65975C0002EA17 /* FractalianGraphNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A5512B65975C0002EA17 /* FractalianGraphNavigatorTests.swift */; };
 		0632A56F2B6598950002EA17 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A56E2B6598950002EA17 /* Graph.swift */; };
 		0632A5712B6598B10002EA17 /* GraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A5702B6598B10002EA17 /* GraphNode.swift */; };
 		0632A5752B659DDE0002EA17 /* GraphFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0632A5742B659DDE0002EA17 /* GraphFileReader.swift */; };
@@ -24,7 +22,8 @@
 		063D184D2B6D967600FA61BA /* NumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D184C2B6D967600FA61BA /* NumberTextField.swift */; };
 		063D184F2B6D9BB900FA61BA /* GraphSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D184E2B6D9BB900FA61BA /* GraphSliderView.swift */; };
 		063D18512B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D18502B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift */; };
-		063D18532B6E8C6F00FA61BA /* AcyclicGraphGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D18522B6E8C6F00FA61BA /* AcyclicGraphGeneratorTests.swift */; };
+		063D18552B6FEA7E00FA61BA /* GraphNode+ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D18542B6FEA7E00FA61BA /* GraphNode+ViewData.swift */; };
+		063D18582B70098300FA61BA /* GraphGeneratorFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D18572B70098300FA61BA /* GraphGeneratorFormView.swift */; };
 		066CCCA92B6C0A0A00724E2C /* GraphManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCA82B6C0A0A00724E2C /* GraphManager .swift */; };
 		066CCCAB2B6C124400724E2C /* LoadGraphDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCAA2B6C124400724E2C /* LoadGraphDestinations.swift */; };
 		066CCCAD2B6C2F5700724E2C /* GraphNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066CCCAC2B6C2F5700724E2C /* GraphNodeView.swift */; };
@@ -38,7 +37,7 @@
 		066D07762B667D6E009E60C5 /* GraphCorruptedXML.xml in Resources */ = {isa = PBXBuildFile; fileRef = 066D07742B667D6E009E60C5 /* GraphCorruptedXML.xml */; };
 		066D07772B667D6E009E60C5 /* GraphCorruptedStructure.xml in Resources */ = {isa = PBXBuildFile; fileRef = 066D07752B667D6E009E60C5 /* GraphCorruptedStructure.xml */; };
 		066D07792B66808A009E60C5 /* RandomGraphGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D07782B66808A009E60C5 /* RandomGraphGenerator.swift */; };
-		066D077B2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D077A2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift */; };
+		066D077B2B6689FB009E60C5 /* GraphGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D077A2B6689FB009E60C5 /* GraphGeneratorTests.swift */; };
 		066D077E2B668CAB009E60C5 /* GraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D077D2B668CAB009E60C5 /* GraphTests.swift */; };
 		066D078A2B69460C009E60C5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D07882B69460C009E60C5 /* String+Extension.swift */; };
 		066D078F2B694693009E60C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D078C2B694693009E60C5 /* Constants.swift */; };
@@ -54,7 +53,7 @@
 		066D0C002B6AAAA7009E60C5 /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0BFF2B6AAAA7009E60C5 /* Fonts+Generated.swift */; };
 		066D0C052B6AACB2009E60C5 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C042B6AACB2009E60C5 /* TextStyle.swift */; };
 		066D0C0A2B6AAF59009E60C5 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C092B6AAF59009E60C5 /* StartView.swift */; };
-		066D0C0C2B6AAF8A009E60C5 /* View+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C0B2B6AAF8A009E60C5 /* View+Style.swift */; };
+		066D0C0C2B6AAF8A009E60C5 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C0B2B6AAF8A009E60C5 /* View+Extension.swift */; };
 		066D0C112B6AB06F009E60C5 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C102B6AB06F009E60C5 /* PrimaryButton.swift */; };
 		066D0C132B6AB56D009E60C5 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C122B6AB56D009E60C5 /* SecondaryButton.swift */; };
 		066D0C162B6ABFB1009E60C5 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066D0C152B6ABFB1009E60C5 /* Background.swift */; };
@@ -85,11 +84,9 @@
 		0603747A2B6D86E500C96778 /* NavBarTitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarTitleModifier.swift; sourceTree = "<group>"; };
 		0632A53D2B65975B0002EA17 /* Fractalian Graph Navigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fractalian Graph Navigator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0632A5402B65975B0002EA17 /* FractalianGraphNavigatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalianGraphNavigatorApp.swift; sourceTree = "<group>"; };
-		0632A5422B65975B0002EA17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0632A5442B65975C0002EA17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0632A5472B65975C0002EA17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0632A54D2B65975C0002EA17 /* FractalianGraphNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FractalianGraphNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0632A5512B65975C0002EA17 /* FractalianGraphNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalianGraphNavigatorTests.swift; sourceTree = "<group>"; };
 		0632A56E2B6598950002EA17 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		0632A5702B6598B10002EA17 /* GraphNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphNode.swift; sourceTree = "<group>"; };
 		0632A5742B659DDE0002EA17 /* GraphFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphFileReader.swift; sourceTree = "<group>"; };
@@ -100,7 +97,8 @@
 		063D184C2B6D967600FA61BA /* NumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTextField.swift; sourceTree = "<group>"; };
 		063D184E2B6D9BB900FA61BA /* GraphSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphSliderView.swift; sourceTree = "<group>"; };
 		063D18502B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphGeneratorViewDestinations.swift; sourceTree = "<group>"; };
-		063D18522B6E8C6F00FA61BA /* AcyclicGraphGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcyclicGraphGeneratorTests.swift; sourceTree = "<group>"; };
+		063D18542B6FEA7E00FA61BA /* GraphNode+ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphNode+ViewData.swift"; sourceTree = "<group>"; };
+		063D18572B70098300FA61BA /* GraphGeneratorFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphGeneratorFormView.swift; sourceTree = "<group>"; };
 		066CCCA82B6C0A0A00724E2C /* GraphManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphManager .swift"; sourceTree = "<group>"; };
 		066CCCAA2B6C124400724E2C /* LoadGraphDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadGraphDestinations.swift; sourceTree = "<group>"; };
 		066CCCAC2B6C2F5700724E2C /* GraphNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphNodeView.swift; sourceTree = "<group>"; };
@@ -114,7 +112,7 @@
 		066D07742B667D6E009E60C5 /* GraphCorruptedXML.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GraphCorruptedXML.xml; sourceTree = "<group>"; };
 		066D07752B667D6E009E60C5 /* GraphCorruptedStructure.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = GraphCorruptedStructure.xml; sourceTree = "<group>"; };
 		066D07782B66808A009E60C5 /* RandomGraphGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGraphGenerator.swift; sourceTree = "<group>"; };
-		066D077A2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGraphGeneratorTests.swift; sourceTree = "<group>"; };
+		066D077A2B6689FB009E60C5 /* GraphGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphGeneratorTests.swift; sourceTree = "<group>"; };
 		066D077D2B668CAB009E60C5 /* GraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTests.swift; sourceTree = "<group>"; };
 		066D07882B69460C009E60C5 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		066D078C2B694693009E60C5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -131,7 +129,7 @@
 		066D0C012B6AAB5F009E60C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		066D0C042B6AACB2009E60C5 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		066D0C092B6AAF59009E60C5 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
-		066D0C0B2B6AAF8A009E60C5 /* View+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Style.swift"; sourceTree = "<group>"; };
+		066D0C0B2B6AAF8A009E60C5 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		066D0C102B6AB06F009E60C5 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		066D0C122B6AB56D009E60C5 /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		066D0C152B6ABFB1009E60C5 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
@@ -201,7 +199,6 @@
 				0632A56B2B6597BC0002EA17 /* Features */,
 				066D077F2B694220009E60C5 /* Components */,
 				0632A5722B659CDC0002EA17 /* Resources */,
-				0632A5422B65975B0002EA17 /* ContentView.swift */,
 			);
 			path = FractalianGraphNavigator;
 			sourceTree = "<group>";
@@ -209,10 +206,9 @@
 		0632A5502B65975C0002EA17 /* FractalianGraphNavigatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				066D077C2B668CA0009E60C5 /* Model */,
 				0632A6E42B6673C60002EA17 /* Resources */,
+				066D077C2B668CA0009E60C5 /* Model */,
 				0632A5792B6672620002EA17 /* Services */,
-				0632A5512B65975C0002EA17 /* FractalianGraphNavigatorTests.swift */,
 			);
 			path = FractalianGraphNavigatorTests;
 			sourceTree = "<group>";
@@ -253,6 +249,7 @@
 			children = (
 				06E15C962B6AED68008D768F /* ViewModifiers */,
 				066D07922B6946F7009E60C5 /* String+LocalizedResources.swift */,
+				066D0C0B2B6AAF8A009E60C5 /* View+Extension.swift */,
 				066D07882B69460C009E60C5 /* String+Extension.swift */,
 			);
 			path = Extensions;
@@ -282,9 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				066CCCB72B6CD09400724E2C /* GraphFileReaderTests.swift */,
-				066D077A2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift */,
+				066D077A2B6689FB009E60C5 /* GraphGeneratorTests.swift */,
 				066CCCB92B6CD0A500724E2C /* GraphManagerTests.swift */,
-				063D18522B6E8C6F00FA61BA /* AcyclicGraphGeneratorTests.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -303,7 +299,7 @@
 		063D18462B6D914D00FA61BA /* GraphGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				063D18472B6D915600FA61BA /* GraphGeneratorView.swift */,
+				063D18562B70096700FA61BA /* Views */,
 				063D18502B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift */,
 			);
 			path = GraphGenerator;
@@ -317,6 +313,15 @@
 			path = TextField;
 			sourceTree = "<group>";
 		};
+		063D18562B70096700FA61BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				063D18472B6D915600FA61BA /* GraphGeneratorView.swift */,
+				063D18572B70098300FA61BA /* GraphGeneratorFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		066CCCB22B6C36AC00724E2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +329,7 @@
 				066CCCB32B6C36DF00724E2C /* GraphNodeViewData.swift */,
 				066CCCB02B6C362B00724E2C /* GraphInnerNodeViewData.swift */,
 				060374782B6D7DEA00C96778 /* PaginationData.swift */,
+				063D18542B6FEA7E00FA61BA /* GraphNode+ViewData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -354,7 +360,6 @@
 				066D0BFF2B6AAAA7009E60C5 /* Fonts+Generated.swift */,
 				066D078D2B694693009E60C5 /* Assets+Generated.swift */,
 				066D0C042B6AACB2009E60C5 /* TextStyle.swift */,
-				066D0C0B2B6AAF8A009E60C5 /* View+Style.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -688,7 +693,7 @@
 				066D0C002B6AAAA7009E60C5 /* Fonts+Generated.swift in Sources */,
 				0632A5752B659DDE0002EA17 /* GraphFileReader.swift in Sources */,
 				066CCCB12B6C362B00724E2C /* GraphInnerNodeViewData.swift in Sources */,
-				066D0C0C2B6AAF8A009E60C5 /* View+Style.swift in Sources */,
+				066D0C0C2B6AAF8A009E60C5 /* View+Extension.swift in Sources */,
 				066D0C132B6AB56D009E60C5 /* SecondaryButton.swift in Sources */,
 				063D184A2B6D92DD00FA61BA /* SegmentedControl.swift in Sources */,
 				06E15C8D2B6AE451008D768F /* StartViewDestinations.swift in Sources */,
@@ -702,12 +707,12 @@
 				066D07792B66808A009E60C5 /* RandomGraphGenerator.swift in Sources */,
 				06E15E042B6AEE6B008D768F /* LoadingView.swift in Sources */,
 				0632A56F2B6598950002EA17 /* Graph.swift in Sources */,
+				063D18582B70098300FA61BA /* GraphGeneratorFormView.swift in Sources */,
 				06E15E022B6AEE20008D768F /* BaseView.swift in Sources */,
 				063D184D2B6D967600FA61BA /* NumberTextField.swift in Sources */,
 				066D0C052B6AACB2009E60C5 /* TextStyle.swift in Sources */,
 				063D18512B6E89D900FA61BA /* GraphGeneratorViewDestinations.swift in Sources */,
 				066D0A962B6A64D6009E60C5 /* AcyclicGraphGenerator.swift in Sources */,
-				0632A5432B65975B0002EA17 /* ContentView.swift in Sources */,
 				0632A5712B6598B10002EA17 /* GraphNode.swift in Sources */,
 				066CCCA92B6C0A0A00724E2C /* GraphManager .swift in Sources */,
 				0603747B2B6D86E500C96778 /* NavBarTitleModifier.swift in Sources */,
@@ -725,6 +730,7 @@
 				066D0C0A2B6AAF59009E60C5 /* StartView.swift in Sources */,
 				066CCCAD2B6C2F5700724E2C /* GraphNodeView.swift in Sources */,
 				066CCCB42B6C36DF00724E2C /* GraphNodeViewData.swift in Sources */,
+				063D18552B6FEA7E00FA61BA /* GraphNode+ViewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -735,9 +741,7 @@
 				066D077E2B668CAB009E60C5 /* GraphTests.swift in Sources */,
 				066CCCBA2B6CD0A500724E2C /* GraphManagerTests.swift in Sources */,
 				066CCCB82B6CD09400724E2C /* GraphFileReaderTests.swift in Sources */,
-				0632A5522B65975C0002EA17 /* FractalianGraphNavigatorTests.swift in Sources */,
-				063D18532B6E8C6F00FA61BA /* AcyclicGraphGeneratorTests.swift in Sources */,
-				066D077B2B6689FB009E60C5 /* RandomGraphGeneratorTests.swift in Sources */,
+				066D077B2B6689FB009E60C5 /* GraphGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

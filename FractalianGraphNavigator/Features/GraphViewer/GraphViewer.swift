@@ -26,7 +26,12 @@ struct GraphViewer: View {
                         graphManager.restorePreviousGraphNode()
                     }
                 )
-                .padding(.horizontal, Spacing.regular)
+                .padding(
+                    EdgeInsets(top: .zero,
+                               leading: Spacing.regular,
+                               bottom: Spacing.large,
+                               trailing: Spacing.regular)
+                )
 
             }
             .padding(.horizontal, Spacing.base)
@@ -64,10 +69,7 @@ private struct NodeView: View {
                         Color.primaryWhite
                     }
                     .cornerRadius(CornerRadius.regular)
-                    .shadow(
-                        color: .backgroundShadow,
-                        radius: 8.0
-                    )
+                    .addShadow()
             } else {
                 GraphEmptyView()
                     .padding(.vertical, Spacing.small)
@@ -76,10 +78,7 @@ private struct NodeView: View {
                         Color.primaryWhite
                     }
                     .cornerRadius(CornerRadius.regular)
-                    .shadow(
-                        color: .backgroundShadow,
-                        radius: 8.0
-                    )
+                    .addShadow()
             }
         }
     }

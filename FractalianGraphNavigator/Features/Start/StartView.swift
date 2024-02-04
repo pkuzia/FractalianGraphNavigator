@@ -78,12 +78,7 @@ private struct CenterLogo: View {
                     .scaledToFit()
                     .frame(width: 100, height: 100)
             )
-            .shadow(
-                color: .backgroundShadow,
-                radius: 8.0,
-                x: 4.0,
-                y: 4.0
-            )
+            .addShadow()
     }
 }
 
