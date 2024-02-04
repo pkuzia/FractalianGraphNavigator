@@ -147,3 +147,4 @@ internal extension String {
 }
 // swiftlint:enable function_parameter_count identifier_name line_length type_body_length
 
+// swiftlint:enable all

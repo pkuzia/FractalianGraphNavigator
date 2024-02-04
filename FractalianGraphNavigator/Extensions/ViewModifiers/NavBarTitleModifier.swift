@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct NavBarTitleModifier: ViewModifier {
-
     var title: String
 
     func body(content: Content) -> some View {

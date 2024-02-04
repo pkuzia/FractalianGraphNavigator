@@ -8,7 +8,6 @@
 import SwiftUI
 
 public struct BaseView<Content: View>: View {
-
     private let content: () -> Content
 
     @Binding private var isLoading: Bool

@@ -55,3 +55,4 @@ import Foundation
 {% else %}
   // No string found
 {% endif %}
+// swiftlint:enable all

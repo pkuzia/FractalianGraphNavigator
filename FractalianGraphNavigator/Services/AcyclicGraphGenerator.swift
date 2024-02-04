@@ -1,5 +1,3 @@
-// swiftlint:disable all
-
 //
 //  AcyclicGraphGenerator.swift
 //  FractalianGraphNavigator
@@ -29,7 +27,6 @@ class AcyclicGraphGenerator {
 
             var nodes = Int.zero
 
-//            print("digraph {")
             for _ in .zero..<height {
                 let newNodes = width
 
@@ -38,7 +35,6 @@ class AcyclicGraphGenerator {
                         if randomPercent() < probability,
                            let sourceNode = graph.fetchOrCreateNode(id: outerIndex),
                            let targetNode = graph.fetchOrCreateNode(id: innerIndex + nodes) {
-//                            print("  \(outerIndex) -> \(innerIndex + nodes);")
                             try? graph.addEdge(from: sourceNode, to: targetNode)
                         }
                     }

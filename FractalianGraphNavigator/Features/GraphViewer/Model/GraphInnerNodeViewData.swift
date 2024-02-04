@@ -7,7 +7,7 @@
 
 import Foundation
 
-class GraphInnerNodeViewData: Identifiable {
+final class GraphInnerNodeViewData: Identifiable {
     var id = UUID()
     var value: String
 
