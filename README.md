@@ -2,9 +2,11 @@
 
 ## Fractalian Graph Navigator
 
-The Fractalian Graph Navigator is a versatile Swift UI application designed for graphical exploration of large input graphs provided in GraphML format. This application offers an interactive and fractal-like experience, where each graph node is visually represented as a rectangle in the app's UI. Users can seamlessly navigate through the graph structure by clicking or tapping on these rectangles, revealing further rectangles that represent the directly reachable nodes from the parent node. The application, developed using SwiftUI, is compatible with both macOS and iOS/iPadOS platforms, ensuring a consistent and user-friendly experience across devices. 
+The Fractalian Graph Navigator is a Swift UI application designed for graphical exploration of large input graphs provided in GraphML format. This application offers an interactive and fractal-like experience, where each graph node is visually represented as a rectangle in the app's UI. Users can seamlessly navigate through the graph structure by clicking on these rectangles, revealing further rectangles that represent the directly reachable nodes from the parent node.
 
-It handles input graphs with tens of thousands of nodes, including those with cycles, and provides a customizable user interface for an engaging exploration of complex graph relationships. Additionally, a app provides tool for generating interesting graphs, allowing users to dive into a diverse range of graph structures.
+The application, developed using SwiftUI, is compatible with both macOS and iOS/iPadOS platforms, ensuring a consistent and user-friendly experience across devices. It handles input graphs with tens of thousands of nodes, including those with cycles, and provides a customizable user interface for an engaging exploration of complex graph relationships. The loading of the graph from a file is optimized using InputStream to avoid loading the entire XML file into memory.
+
+Additionally, the application includes a convenient helper program for generating interesting graphs, allowing users to explore diverse graph structures, both with and without cycles. To enhance performance, the application employs efficient data presentation techniques, utilizing pagination mechanisms for smooth and responsive visualization of graph data.
 
 ## Build and Runtime Requirements
 + Xcode 15.1
