@@ -23,10 +23,7 @@ struct GraphNodeView: View {
                 if !viewData.nodes.isEmpty {
                     ListView(
                         nodes: $viewData.nodes,
-                        id: $viewData.id,
-                        //
-                        nodeID: $viewData.title
-
+                        id: $viewData.id
                     )
                 } else {
                     GraphEmptyView()
@@ -52,9 +49,6 @@ private struct ListView: View {
     @EnvironmentObject private var graphManager: GraphManager
     @Binding var nodes: [GraphInnerNodeViewData]
     @Binding var id: UUID
-
-    // Test
-    @Binding var nodeID: String
 
     var body: some View {
         ScrollView(.horizontal) {
